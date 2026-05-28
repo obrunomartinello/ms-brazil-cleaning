@@ -1,0 +1,25 @@
+# OS junk files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# IDEs and editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Temporary / Scratch files
+scratch/
+temp/
+tmp/
+*.log
+
+# Antigravity system directories
+.system_generated/
+brain/

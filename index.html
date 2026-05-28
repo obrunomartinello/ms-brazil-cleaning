@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#8b1e6b" />
+
+  <!-- Progressive Resource Preloading (Staircase Load Priority) -->
+  <link rel="preload" fetchpriority="high" as="image" href="./assets/images/logo.png" type="image/png" />
+  <link rel="preload" fetchpriority="high" as="image" href="./assets/images/IMG_2539.jpeg" type="image/jpeg" />
+
+  <!-- SEO Meta Tags -->
+  <title>MS Brazil Cleaning | Premium House Cleaning Tampa Bay, Florida</title>
+  <meta name="description" content="MS Brazil Cleaning Services &ndash; Bringing Brazilian-level detail to Tampa Bay. Premium deep cleaning, move-in/out, and post-construction cleaning for discerning homeowners in Tampa, Lutz, Wesley Chapel, St. Petersburg, and surrounding areas." />
+  <meta name="keywords" content="House Cleaning Tampa Bay, Brazilian Cleaning Services Florida, Premium Deep Cleaning Tampa, Move-in Move-out Cleaning Tampa, Professional House Cleaning Wesley Chapel, Deep Cleaning Lutz, Post Construction Cleaning Tampa, MS Brazil Cleaning" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://msbrazilcleaning.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MS Brazil Cleaning | Premium House Cleaning Tampa Bay" />
+  <meta property="og:description" content="Experience Brazilian-level detail in every corner. Tampa's most meticulous house cleaning service." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://msbrazilcleaning.com/assets/images/IMG_2539.jpeg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/images/logo.png" />
+  <link rel="apple-touch-icon" href="./assets/images/logo.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6c0051',
+            'primary-container': '#8b1e6b',
+            'on-primary': '#ffffff',
+            'on-primary-container': '#ffa1d8',
+            secondary: '#705765',
+            'secondary-container': '#f8d7e8',
+            'on-secondary-container': '#755b6a',
+            surface: '#ffffff',
+            'surface-dim': '#f5f3f4',
+            'surface-container-lowest': '#ffffff',
+            'surface-container-low': '#ffffff',
+            'surface-container': '#ffffff',
+            'surface-container-high': '#f9f7f8',
+            'on-surface': '#1b1c1d',
+            'on-surface-variant': '#54424b',
+            outline: '#86717b',
+            'outline-variant': '#d9c0cb',
+            'primary-fixed': '#ffd8eb',
+            'primary-fixed-dim': '#ffaedc',
+            'surface-tint': '#a0327d',
+          },
+          fontFamily: {
+            serif: ['Lora', 'Georgia', 'serif'],
+            sans: ['Manrope', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- JSON-LD: LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "MS Brazil Cleaning Services",
+    "description": "Premium house cleaning services in Tampa Bay, Florida. Brazilian-level detail for deep cleaning, move-in/out, and post-construction cleaning.",
+    "url": "https://msbrazilcleaning.com",
+    "telephone": "+1-813-545-7674",
+    "priceRange": "$$",
+    "image": "https://msbrazilcleaning.com/assets/images/IMG_2539.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tampa",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 28.0506327,
+      "longitude": -82.72397295
+    },
+    "areaServed": ["Tampa", "Lutz", "Odessa", "Wesley Chapel", "St. Petersburg", "Clearwater", "Brandon", "Riverview", "Seminole", "Spring Hill", "Land O Lakes", "Temple Terrace"],
+    "openingHours": "Mo-Sa 08:00-18:00",
+    "sameAs": [
+      "https://www.facebook.com/msbrazilcleaning",
+      "https://www.instagram.com/msbrazilcleaning"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "200"
+    }
+  }
+  </script>
+</head>
+
+<body class="bg-surface text-on-surface overflow-x-hidden">
+
+  <!-- ══ NAVBAR ══ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="max-w-[1200px] mx-auto px-4 md:px-16 flex justify-between items-center h-20">
+
+      <!-- Logo (Larger official brand logo) -->
+      <a href="#hero" class="flex items-center gap-3 group" aria-label="MS Brazil Cleaning - Home">
+        <img
+          src="./assets/images/logo.png"
+          alt="MS Brazil Cleaning Logo"
+          class="h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+          width="56"
+          height="56"
+        />
+        <span class="font-serif text-lg font-bold text-primary-container hidden sm:block group-hover:text-primary transition-colors duration-200" data-i18n="hero_title_1">
+          MS Brazil Cleaning
+        </span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#services" class="nav-link" data-section="services" data-i18n="nav_services">Services</a>
+        <a href="#about-me" class="nav-link" data-section="about-me" data-i18n="nav_about">About MS Cleaning</a>
+        <a href="#areas" class="nav-link" data-section="areas" data-i18n="nav_areas">Coverage Area</a>
+        <a href="#testimonials" class="nav-link" data-section="testimonials" data-i18n="nav_reviews">Reviews</a>
+      </div>
+
+      <!-- CTA + Language Selector + Hamburger -->
+      <div class="flex items-center gap-3">
+        
+        <!-- Desktop Language Selector Tab Buttons -->
+        <div class="hidden lg:flex items-center gap-1.5 border-r border-outline-variant/30 pr-4 mr-2" id="lang-selector">
+          <button onclick="setLanguage('en')" class="lang-btn px-2 py-1 rounded text-base transition-all duration-200" id="btn-lang-en" title="English">🇺🇸</button>
+          <button onclick="setLanguage('es')" class="lang-btn px-2 py-1 rounded text-base transition-all duration-200" id="btn-lang-es" title="Español">🇪🇸</button>
+          <button onclick="setLanguage('pt')" class="lang-btn px-2 py-1 rounded text-base transition-all duration-200" id="btn-lang-pt" title="Português">🇧🇷</button>
+        </div>
+
+        <a
+          href="javascript:void(0)"
+          onclick="openContactModal('general')"
+          class="hidden sm:inline-flex items-center gap-2 bg-primary-container text-white px-5 py-2.5 rounded-lg font-sans text-sm font-bold hover:bg-primary transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 min-h-[44px]"
+          id="nav-cta-btn"
+        >
+          <span class="material-symbols-outlined text-[18px]">chat</span>
+          <span data-i18n="nav_cta">Get a Quote</span>
+        </a>
+
+        <!-- Hamburger (mobile) -->
+        <button id="mobile-menu" aria-label="Open menu" aria-expanded="false" class="md:hidden min-w-[44px] min-h-[44px] flex items-center justify-center">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div id="mobile-nav" class="mobile-nav md:hidden" role="dialog" aria-label="Mobile navigation">
+      
+      <!-- Mobile Drawer Language Selector -->
+      <div class="flex items-center gap-3 py-3 border-b border-outline-variant/20 mb-2" id="mobile-lang-selector">
+        <span class="text-xs font-bold text-on-surface-variant uppercase tracking-wider" data-i18n="lang_title">Language:</span>
+        <div class="flex gap-2">
+          <button onclick="setLanguage('en')" class="mobile-lang-btn px-3 py-1 rounded text-lg transition-all duration-200" id="mob-lang-en" title="English">🇺🇸</button>
+          <button onclick="setLanguage('es')" class="mobile-lang-btn px-3 py-1 rounded text-lg transition-all duration-200" id="mob-lang-es" title="Español">🇪🇸</button>
+          <button onclick="setLanguage('pt')" class="mobile-lang-btn px-3 py-1 rounded text-lg transition-all duration-200" id="mob-lang-pt" title="Português">🇧🇷</button>
+        </div>
+      </div>
+
+      <a href="#services" data-i18n="nav_services">Services</a>
+      <a href="#about-me" data-i18n="about_tassia">About MS Cleaning</a>
+      <a href="#areas" data-i18n="nav_areas">Coverage Area</a>
+      <a href="#testimonials" data-i18n="nav_reviews">Reviews</a>
+      <a href="javascript:void(0)" onclick="openContactModal('general')" class="mt-3 flex items-center gap-2 text-primary-container font-bold">
+        <span class="material-symbols-outlined text-[18px]">chat</span>
+        <span data-i18n="mob_cta">Get a Quote</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ══ HERO SECTION ══ -->
+    <section id="hero" class="relative min-h-screen flex items-center">
+
+      <!-- Parallax Background (High priority decode to avoid layout shift) -->
+      <div class="hero-bg" role="img" aria-label="A beautifully cleaned home interior" fetchpriority="high"></div>
+
+      <!-- Dark Overlay -->
+      <div class="hero-overlay"></div>
+
+      <!-- Content -->
+      <div class="relative z-10 max-w-[1200px] mx-auto px-5 md:px-16 w-full py-28 md:py-40">
+        <div class="max-w-2xl">
+
+          <!-- Badge -->
+          <span class="badge-chip mb-6 inline-block reveal" style="transition-delay:0s" data-i18n="hero_badge">
+            ✨ Tampa Bay Area &middot; Est. 2020
+          </span>
+
+          <!-- Headline -->
+          <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-5 reveal" style="transition-delay:0.1s">
+            <span class="block text-primary-fixed" data-i18n="hero_title_1">MS Brazil</span>
+            <span class="block text-primary-fixed-dim font-normal italic text-4xl md:text-5xl mt-2" data-i18n="hero_title_2">Services</span>
+          </h1>
+
+          <!-- Sub-headline -->
+          <p class="font-sans text-base md:text-xl text-white/85 mb-8 leading-relaxed max-w-lg reveal" style="transition-delay:0.2s" data-i18n="hero_sub">
+            Tampa&rsquo;s premium house cleaning &mdash; <strong class="text-white">Brazilian-level detail</strong>, every time. Meticulous, reliable, and tailored to your home.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-3 reveal" style="transition-delay:0.3s">
+            <a
+              href="javascript:void(0)"
+              onclick="openContactModal('general')"
+              class="btn-primary min-h-[52px] text-base"
+              id="hero-cta-btn"
+            >
+              <span class="material-symbols-outlined text-[20px]">chat</span>
+              <span data-i18n="hero_cta_1">Get a Free Quote</span>
+              <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </a>
+            <a href="#services" class="btn-ghost min-h-[52px] justify-center text-base" id="hero-services-btn" data-i18n="hero_cta_2">
+              Our Services
+            </a>
+          </div>
+
+          <!-- Trust Signals Row -->
+          <div class="flex items-center gap-4 mt-10 reveal" style="transition-delay:0.4s">
+            <div class="flex -space-x-2" aria-hidden="true">
+              <div class="w-9 h-9 rounded-full bg-secondary-container border-2 border-white flex items-center justify-center text-xs font-bold text-primary-container">S</div>
+              <div class="w-9 h-9 rounded-full bg-primary-fixed border-2 border-white flex items-center justify-center text-xs font-bold text-primary">J</div>
+              <div class="w-9 h-9 rounded-full bg-primary-container border-2 border-white flex items-center justify-center text-xs font-bold text-white">M</div>
+            </div>
+            <div class="text-white/80 text-sm font-sans">
+              <span class="text-yellow-300 font-bold" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="ml-1" data-i18n="hero_trust">Trusted by 200+ Tampa homeowners</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce reveal" style="transition-delay:0.6s" aria-hidden="true">
+        <div class="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center pt-1.5">
+          <div class="w-1 h-2.5 bg-white/60 rounded-full"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ TRUST BAR ══ -->
+    <section class="bg-surface-container-lowest py-16 md:py-20 border-y border-outline-variant/30" id="trust">
+      <div class="max-w-[1200px] mx-auto px-5 md:px-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center reveal-stagger">
+
+          <div class="flex flex-col items-center gap-3">
+            <div class="trust-icon">
+              <span class="material-symbols-outlined" style="font-size:2rem" aria-hidden="true">verified_user</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-on-surface" data-i18n="trust_title_1">Licensed &amp; Insured</h3>
+            <p class="font-sans text-sm text-on-surface-variant leading-relaxed" data-i18n="trust_desc_1">Peace of mind for your most valuable asset.</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-3">
+            <div class="trust-icon">
+              <span class="material-symbols-outlined" style="font-size:2rem" aria-hidden="true">cleaning_services</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-on-surface" data-i18n="trust_title_2">Meticulous Detailing</h3>
+            <p class="font-sans text-sm text-on-surface-variant leading-relaxed" data-i18n="trust_desc_2">We clean the corners others cut.</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-3">
+            <div class="trust-icon">
+              <span class="material-symbols-outlined" style="font-size:2rem" aria-hidden="true">schedule</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-on-surface" data-i18n="trust_title_3">Reliable Scheduling</h3>
+            <p class="font-sans text-sm text-on-surface-variant leading-relaxed" data-i18n="trust_desc_3">Prompt, punctual, and professional every visit.</p>
+          </div>
+
+          <div class="flex flex-col items-center gap-3">
+            <div class="trust-icon">
+              <span class="material-symbols-outlined" style="font-size:2rem" aria-hidden="true">eco</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-on-surface" data-i18n="trust_title_4">Eco-Friendly Care</h3>
+            <p class="font-sans text-sm text-on-surface-variant leading-relaxed" data-i18n="trust_desc_4">Safe, non-toxic products for your family and pets.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SERVICES SECTION ══ -->
+    <section id="services" class="py-20 md:py-32 bg-surface">
+      <div class="max-w-[1200px] mx-auto px-5 md:px-16">
+
+        <div class="text-center mb-14 md:mb-20 reveal">
+          <p class="section-label" data-i18n="services_label">What We Offer</p>
+          <h2 class="font-serif text-3xl md:text-5xl font-bold text-on-surface mb-4 tracking-tight" data-i18n="services_title">
+            Our Signature Services
+          </h2>
+          <p class="font-sans text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed" data-i18n="services_sub">
+            Tailored cleaning solutions delivering uncompromising quality across every room, every surface.
+          </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 reveal-stagger">
+
+          <!-- Card 1: Deep Clean -->
+          <div class="service-card ambient-shadow" id="service-deep-clean">
+            <div class="overflow-hidden bg-surface-dim">
+              <img
+                src="./assets/images/IMG_2342.jpeg"
+                alt="Deep cleaning - spotless kitchen and surfaces"
+                width="400"
+                height="220"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span class="badge-chip mb-3 self-start" data-i18n="service_1_badge">Most Thorough</span>
+              <h3 class="font-serif text-xl md:text-2xl font-bold text-on-surface mb-3" data-i18n="service_1_title">Deep Cleaning</h3>
+              <p class="font-sans text-sm text-on-surface-variant mb-5 flex-grow leading-relaxed" data-i18n="service_1_desc">
+                A thorough top-to-bottom clean, perfect for spring cleaning, after events, or special occasions. Every corner, every detail.
+              </p>
+              <div class="border-t border-outline-variant/30 pt-4 flex justify-between items-center">
+                <span class="font-sans text-xs text-on-surface-variant uppercase tracking-wider" data-i18n="service_1_start">Starting from</span>
+                <a
+                  href="javascript:void(0)"
+                  onclick="openContactModal('deep')"
+                  class="flex items-center gap-1 text-primary-container font-sans text-sm font-bold hover:text-primary transition-colors uppercase tracking-wider min-h-[44px]"
+                  id="service-deep-clean-cta"
+                >
+                  <span data-i18n="service_1_cta">Get Quote</span> <span class="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Move-In/Out (Featured) -->
+          <div class="service-card relative border-2 border-primary-container/25" id="service-move-inout" style="box-shadow: 0 20px 60px rgba(139, 30, 107, 0.14);">
+            <div class="popular-tag">Most Popular</div>
+            <div class="overflow-hidden bg-surface-dim">
+              <img
+                src="./assets/images/IMG_2478.jpeg"
+                alt="Move-in move-out cleaning service - spotless empty room"
+                width="400"
+                height="220"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span class="badge-chip mb-3 self-start" style="background:#f8d7e8; color:#6c0051;" data-i18n="service_2_badge">Move Ready</span>
+              <h3 class="font-serif text-xl md:text-2xl font-bold text-on-surface mb-3" data-i18n="service_2_title">Move-In / Move-Out</h3>
+              <p class="font-sans text-sm text-on-surface-variant mb-5 flex-grow leading-relaxed" data-i18n="service_2_desc">
+                Ensure your new or old home is spotless for transition. Includes inside cabinets, appliances, and every hidden surface.
+              </p>
+              <div class="border-t border-outline-variant/30 pt-4">
+                <a
+                  href="javascript:void(0)"
+                  onclick="openContactModal('move')"
+                  class="btn-primary w-full justify-center text-sm py-3 min-h-[48px]"
+                  id="service-move-cta"
+                >
+                  <span class="material-symbols-outlined text-[18px]" aria-hidden="true">chat</span>
+                  <span data-i18n="service_2_cta">Book This Service</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Post-Construction -->
+          <div class="service-card ambient-shadow" id="service-post-construction">
+            <div class="overflow-hidden bg-surface-dim">
+              <img
+                src="./assets/images/IMG_5385.jpeg"
+                alt="Post-construction cleaning removing dust and debris"
+                width="400"
+                height="220"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span class="badge-chip mb-3 self-start" data-i18n="service_3_badge">Specialized</span>
+              <h3 class="font-serif text-xl md:text-2xl font-bold text-on-surface mb-3" data-i18n="service_3_title">Post-Construction</h3>
+              <p class="font-sans text-sm text-on-surface-variant mb-5 flex-grow leading-relaxed" data-i18n="service_3_desc">
+                Specialized cleaning to remove fine construction dust, debris, and residues after renovation and building projects.
+              </p>
+              <div class="border-t border-outline-variant/30 pt-4 flex justify-between items-center">
+                <span class="font-sans text-xs text-on-surface-variant uppercase tracking-wider" data-i18n="service_3_lbl">We handle it all</span>
+                <a
+                  href="javascript:void(0)"
+                  onclick="openContactModal('post')"
+                  class="flex items-center gap-1 text-primary-container font-sans text-sm font-bold hover:text-primary transition-colors uppercase tracking-wider min-h-[44px]"
+                  id="service-post-cta"
+                >
+                  <span data-i18n="service_3_cta">Get Quote</span> <span class="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ RESULTS GALLERY (Infinite Carousel) ══ -->
+    <section class="py-20 md:py-32 bg-surface-container-lowest border-y border-outline-variant/30 overflow-hidden" id="gallery">
+      <div class="max-w-[1200px] mx-auto px-5 md:px-16 mb-12 md:mb-16">
+        <div class="text-center reveal">
+          <p class="section-label" data-i18n="gallery_label">Our Work</p>
+          <h2 class="font-serif text-3xl md:text-5xl font-bold text-on-surface mb-4 tracking-tight" data-i18n="gallery_title">
+            Cleaning Excellence in Action
+          </h2>
+          <p class="font-sans text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed" data-i18n="gallery_sub">
+            See the transformative power of our Brazilian-level detailing.
+          </p>
+        </div>
+      </div>
+
+      <!-- Carousel Track (Scrolling triggered async on visible) -->
+      <div class="w-full relative reveal">
+        <div class="carousel-fade-left" aria-hidden="true"></div>
+        <div class="carousel-fade-right" aria-hidden="true"></div>
+
+        <div class="carousel-track" id="gallery-track" aria-label="Project gallery" role="region">
+          <!-- Set 1 -->
+          <div class="carousel-item ambient-shadow">
+            <img src="./assets/images/IMG_2539.jpeg" alt="Spotlessly cleaned living area" loading="lazy" decoding="async" />
+          </div>
+          <div class="carousel-item ambient-shadow">
+            <img src="./assets/images/IMG_2342.jpeg" alt="Immaculate kitchen surfaces" loading="lazy" decoding="async" />
+          </div>
+          <div class="carousel-item ambient-shadow">
+            <img src="./assets/images/IMG_2478.jpeg" alt="Pristine room after cleaning" loading="lazy" decoding="async" />
+          </div>
+          <div class="carousel-item ambient-shadow">
+            <img src="./assets/images/IMG_5385.jpeg" alt="Crystal clear floors and surfaces" loading="lazy" decoding="async" />
+          </div>
+          <div class="carousel-item ambient-shadow">
+            <img src="./assets/images/IMG_5396.jpeg" alt="Spotless appliances and counters" loading="lazy" decoding="async" />
+          </div>
+          <!-- Set 2 (duplicate for infinite loop) -->
+          <div class="carousel-item ambient-shadow" aria-hidden="true"><img src="./assets/images/IMG_2539.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="carousel-item ambient-shadow" aria-hidden="true"><img src="./assets/images/IMG_2342.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="carousel-item ambient-shadow" aria-hidden="true"><img src="./assets/images/IMG_2478.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="carousel-item ambient-shadow" aria-hidden="true"><img src="./assets/images/IMG_5385.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="carousel-item ambient-shadow" aria-hidden="true"><img src="./assets/images/IMG_5396.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ TESTIMONIALS ══ -->
+    <section id="testimonials" class="py-20 md:py-32 bg-surface-container-low">
+      <div class="max-w-[1200px] mx-auto px-5 md:px-16">
+
+        <div class="text-center mb-12 md:mb-16 reveal">
+          <p class="section-label" data-i18n="reviews_label">Social Proof</p>
+          <h2 class="font-serif text-3xl md:text-5xl font-bold text-on-surface mb-4 tracking-tight" data-i18n="reviews_title">
+            Loved by Tampa Homeowners
+          </h2>
+          <p class="font-sans text-base md:text-lg text-on-surface-variant max-w-xl mx-auto leading-relaxed" data-i18n="reviews_sub">
+            Real stories from real clients who trust MS Brazil Cleaning with their most valuable space.
+          </p>
+        </div>
+
+        <!-- Mobile: swipeable / Desktop: 3-col grid -->
+        <div id="testimonials-container" class="testimonials-mobile reveal">
+
+          <!-- Review 1 -->
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <span class="material-symbols-outlined" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined" aria-hidden="true">star</span>
+            </div>
+            <blockquote class="font-serif text-base text-on-surface-variant italic leading-relaxed flex-grow" data-i18n="review_1_text">
+              &ldquo;Absolutely incredible attention to detail. My house has never looked or smelled this clean. The Brazilian-level detailing is <em>real</em>!&rdquo;
+            </blockquote>
+            <footer>
+              <div class="font-sans text-xs font-bold text-on-surface uppercase tracking-widest" data-i18n="review_1_author">Sarah M.</div>
+              <div class="font-sans text-xs text-on-surface-variant mt-0.5" data-i18n="review_1_loc">South Tampa &middot; Recurring Client</div>
+            </footer>
+          </article>
+
+          <!-- Review 2 -->
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <span class="material-symbols-outlined" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined" aria-hidden="true">star</span>
+            </div>
+            <blockquote class="font-serif text-base text-on-surface-variant italic leading-relaxed flex-grow" data-i18n="review_2_text">
+              &ldquo;Hired them for a move-out clean and they exceeded all expectations. Prompt, professional, and absolutely worth every penny.&rdquo;
+            </blockquote>
+            <footer>
+              <div class="font-sans text-xs font-bold text-on-surface uppercase tracking-widest" data-i18n="review_2_author">James R.</div>
+              <div class="font-sans text-xs text-on-surface-variant mt-0.5" data-i18n="review_2_loc">Wesley Chapel &middot; Move-Out Client</div>
+            </footer>
+          </article>
+
+          <!-- Review 3 -->
+          <article class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <span class="material-symbols-outlined" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined" aria-hidden="true">star</span>
+              <span class="material-symbols-outlined" aria-hidden="true">star</span>
+            </div>
+            <blockquote class="font-serif text-base text-on-surface-variant italic leading-relaxed flex-grow" data-i18n="review_3_text">
+              &ldquo;Consistent, reliable, and trustworthy. We&rsquo;ve used them bi-weekly for 8 months &mdash; best decision we&rsquo;ve made for our home.&rdquo;
+            </blockquote>
+            <footer>
+              <div class="font-sans text-xs font-bold text-on-surface uppercase tracking-widest" data-i18n="review_3_author">Maria K.</div>
+              <div class="font-sans text-xs text-on-surface-variant mt-0.5" data-i18n="review_3_loc">St. Petersburg &middot; Bi-Weekly Client</div>
+            </footer>
+          </article>
+
+        </div>
+
+        <!-- Mobile Dot Indicators -->
+        <div id="carousel-dots" class="carousel-dots md:hidden" role="tablist" aria-label="Testimonial navigation">
+          <button class="dot active" role="tab" aria-label="Review 1" aria-selected="true"></button>
+          <button class="dot" role="tab" aria-label="Review 2" aria-selected="false"></button>
+          <button class="dot" role="tab" aria-label="Review 3" aria-selected="false"></button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══ ABOUT SECTION (Focus on MS Cleaning as brand, Tássia as Founder inside) ══ -->
+    <section id="about-me" class="py-20 md:py-32 bg-surface">
+      <div class="max-w-[1200px] mx-auto px-5 md:px-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
+
+          <!-- Photo -->
+          <div class="authority-photo reveal-left order-2 md:order-1 bg-surface-dim rounded-2xl overflow-hidden">
+            <img
+              src="./assets/images/IMG_5396.jpeg"
+              alt="Tássia working and inspecting quality, founder of MS Brazil Cleaning"
+              class="w-full aspect-[4/5] object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+
+          <!-- Text content -->
+          <div class="flex flex-col justify-center order-1 md:order-2 reveal-right">
+            <p class="section-label mb-4" data-i18n="about_label">Our Philosophy</p>
+            <h2 class="font-serif text-3xl md:text-5xl font-bold text-on-surface mb-6 md:mb-8 tracking-tight" data-i18n="about_title">
+              About MS Brazil Cleaning
+            </h2>
+
+            <blockquote class="font-sans text-base md:text-lg text-on-surface-variant mb-5 leading-relaxed border-l-4 border-primary-container/40 pl-5 italic" data-i18n="about_quote">
+              &ldquo;We don&rsquo;t just clean; we care for your home as if it were our own.&rdquo;
+            </blockquote>
+            
+            <p class="font-sans text-sm md:text-base text-on-surface-variant mb-8 leading-relaxed" data-i18n="about_text">
+              MS Brazil Cleaning Services was founded with a clear, uncompromising mission: to bring the renowned Brazilian standard of meticulous detailing and housekeeping directly to the Tampa Bay area. We believe that a clean home is the foundation for a happy, peaceful life. Under Tássia's active leadership as owner and operator, every single team member is trained to notice the micro-details that standard services routinely miss. When you walk through your door, we want you to feel a profound sense of comfort, relief, and serene cleanliness.
+            </p>
+
+            <!-- Signature Line -->
+            <div class="divider-ornament">
+              <div></div>
+            </div>
+            <div class="signature-text mt-4" data-i18n="about_founder">Tássia, Owner & Founder</div>
+            <p class="font-sans text-xs uppercase tracking-[0.15em] text-on-surface-variant mt-2" data-i18n="hero_title_2">
+              Services
+            </p>
+
+            <!-- Trust micro-stats -->
+            <div class="flex gap-8 md:gap-10 mt-8 md:mt-10">
+              <div>
+                <div class="font-serif text-2xl md:text-3xl font-bold text-primary-container" data-i18n="about_stat_1_num">200+</div>
+                <div class="font-sans text-xs text-on-surface-variant uppercase tracking-wider mt-1" data-i18n="about_stat_1_lbl">Happy Clients</div>
+              </div>
+              <div>
+                <div class="font-serif text-2xl md:text-3xl font-bold text-primary-container" aria-label="5 star average rating" data-i18n="about_stat_2_num">5 ★</div>
+                <div class="font-sans text-xs text-on-surface-variant uppercase tracking-wider mt-1" data-i18n="about_stat_2_lbl">Avg. Rating</div>
+              </div>
+              <div>
+                <div class="font-serif text-2xl md:text-3xl font-bold text-primary-container" data-i18n="about_stat_3_num">6+</div>
+                <div class="font-sans text-xs text-on-surface-variant uppercase tracking-wider mt-1" data-i18n="about_stat_3_lbl">Years Serving Tampa</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ COVERAGE AREA ══ -->
+    <section id="areas" class="py-20 md:py-32 bg-surface-container-low">
+      <div class="max-w-[1200px] mx-auto px-5 md:px-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
+
+          <!-- Text -->
+          <div class="reveal-left">
+            <p class="section-label mb-4" data-i18n="areas_label">Where We Serve</p>
+            <h2 class="font-serif text-3xl md:text-5xl font-bold text-on-surface mb-5 tracking-tight" data-i18n="areas_title">
+              Serving the Greater<br />Tampa Bay Area
+            </h2>
+            <p class="font-sans text-base md:text-lg text-on-surface-variant mb-8 leading-relaxed" data-i18n="areas_sub">
+              We bring our meticulous cleaning standards to homes across the region. Not sure if we cover your area? Message us!
+            </p>
+            <div class="flex flex-wrap gap-2 md:gap-3">
+              <span class="area-chip">Tampa</span>
+              <span class="area-chip">Lutz</span>
+              <span class="area-chip">Odessa</span>
+              <span class="area-chip">Seminole</span>
+              <span class="area-chip">Spring Hill</span>
+              <span class="area-chip">Land O&rsquo; Lakes</span>
+              <span class="area-chip">Wesley Chapel</span>
+              <span class="area-chip">Temple Terrace</span>
+              <span class="area-chip">St. Petersburg</span>
+              <span class="area-chip">Clearwater</span>
+              <span class="area-chip">Brandon</span>
+              <span class="area-chip">Riverview</span>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div class="map-container premium-shadow reveal-right">
+            <iframe
+              title="MS Brazil Cleaning Service Area - Tampa Bay, Florida"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d222658.1774773758!2d-82.72397295!3d28.0506327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b782b3b9d1b1%3A0xa75f1389af96b463!2sTampa%2C%20FL!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FINAL CTA ══ -->
+    <section id="contact" class="cta-section py-20 md:py-32 text-center px-5">
+      <div class="relative z-10 max-w-3xl mx-auto flex flex-col items-center reveal">
+
+        <span class="badge-chip badge-chip-dark mb-6" data-i18n="cta_label">Ready to Experience the Difference?</span>
+
+        <h2 class="font-serif text-3xl md:text-5xl font-bold text-white mb-5 tracking-tight leading-tight" data-i18n="cta_title">
+          Your Spotless Home<br class="hidden md:block" /> Awaits. Let&rsquo;s Talk.
+        </h2>
+
+        <p class="font-sans text-base md:text-lg text-white/80 mb-10 leading-relaxed max-w-xl" data-i18n="cta_sub">
+          Contact us today for a <strong class="text-white">free, personalized quote</strong>. No commitment, no pressure &mdash; just premium cleaning.
+        </p>
+
+        <!-- WhatsApp CTA -->
+        <a
+          href="#"
+          data-whatsapp
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-whatsapp mb-5 w-full sm:w-auto"
+          id="footer-cta-btn"
+        >
+          <span class="material-symbols-outlined text-[28px] text-green-500" aria-hidden="true">chat</span>
+          <span data-i18n="cta_btn">Chat on WhatsApp</span>
+        </a>
+
+        <!-- SMS Alternative -->
+        <p class="font-sans text-sm text-white/70">
+          <span data-i18n="cta_sms">Prefer a text? SMS us at</span>
+          <a
+            href="sms:+18135457674"
+            class="underline underline-offset-2 text-white/90 hover:text-white font-semibold transition-colors duration-200 ml-1"
+            id="footer-sms-btn"
+          >
+            (813) 545-7674
+          </a>
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="bg-surface-container-low border-t border-outline-variant py-12 md:py-16">
+    <div class="max-w-[1200px] mx-auto px-5 md:px-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-12">
+
+      <!-- Brand Column (Featuring large official brand logo) -->
+      <div class="sm:col-span-2 md:col-span-1">
+        <div class="flex flex-col gap-3 mb-5">
+          <img src="./assets/images/logo.png" alt="MS Brazil Cleaning Logo" class="h-24 w-auto object-contain self-start" />
+          <span class="font-serif text-2xl font-bold text-primary-container">MS Brazil Cleaning</span>
+        </div>
+        <p class="font-sans text-sm text-on-surface-variant leading-relaxed mb-3" data-i18n="footer_copyright">
+          &copy; 2026 MS Brazil Cleaning Services. Brazilian-level detail in every corner.
+        </p>
+        <p class="font-sans text-xs text-on-surface-variant/60" data-i18n="footer_lic">
+          Licensed &amp; Insured &middot; Tampa Bay, Florida
+        </p>
+        <!-- Social Links with small logos -->
+        <div class="flex items-center gap-4 mt-5">
+          <a
+            href="https://www.facebook.com/msbrazilcleaning"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 text-on-surface-variant hover:text-primary-container transition-colors duration-200 text-xs font-semibold"
+            aria-label="MS Brazil Cleaning on Facebook"
+          >
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+            </svg>
+            Facebook
+          </a>
+          <a
+            href="https://www.instagram.com/msbrazilcleaning"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 text-on-surface-variant hover:text-primary-container transition-colors duration-200 text-xs font-semibold"
+            aria-label="MS Brazil Cleaning on Instagram"
+          >
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.01 3.71.054 1.14.051 1.96.23 2.673.508.75.291 1.39.681 2.03 1.32.64.64 1.03 1.28 1.32 2.03.28.717.459 1.537.51 2.673.043.926.054 1.28.054 3.71s-.01 2.784-.054 3.71c-.051 1.14-.23 1.96-.508 2.673-.291.75-.681 1.39-1.32 2.03-.64.64-1.28 1.03-2.03 1.32-.717.28-1.537.459-2.673.51-.926.043-1.28.054-3.71.054s-2.784-.01-3.71-.054c-1.14-.051-1.96-.23-2.673-.508-.75-.291-1.39-.681-2.03-1.32-.64-.64-1.03-1.28-1.32-2.03-.28-.717-.459-1.537-.51-2.673-.043-.926-.054-1.28-.054-3.71s.01-2.784.054-3.71c.051-1.14.23-1.96.508-2.673.291-.75.681-1.39 1.32-2.03.64-.64 1.28-1.03 2.03-1.32.717-.28 1.537-.459 2.673-.51.926-.043 1.28-.054 3.71-.054zM12 5.902c-3.369 0-6.098 2.729-6.098 6.098s2.729 6.098 6.098 6.098 6.098-2.729 6.098-6.098S15.369 5.902 12 5.902zm0 9.996c-2.152 0-3.898-1.746-3.898-3.898S9.848 8.102 12 8.102s3.898 1.746 3.898 3.898-1.746 3.898-3.898 3.898zm6.405-11.758a1.22 1.22 0 100 2.44 1.22 1.22 0 000-2.44z" clip-rule="evenodd" />
+            </svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+
+      <!-- Services Column -->
+      <div>
+        <span class="font-sans text-xs font-bold text-on-surface uppercase tracking-[0.15em] mb-4 block" data-i18n="nav_services">Services</span>
+        <nav aria-label="Services navigation">
+          <ul class="flex flex-col gap-3">
+            <li><a href="#services" class="font-sans text-sm text-on-surface-variant hover:text-primary-container transition-colors duration-200" data-i18n="service_1_title">Deep Cleaning</a></li>
+            <li><a href="#services" class="font-sans text-sm text-on-surface-variant hover:text-primary-container transition-colors duration-200" data-i18n="service_2_title">Move-In / Move-Out</a></li>
+            <li><a href="#services" class="font-sans text-sm text-on-surface-variant hover:text-primary-container transition-colors duration-200" data-i18n="service_3_title">Post-Construction</a></li>
+            <li><a href="#services" class="font-sans text-sm text-on-surface-variant hover:text-primary-container transition-colors duration-200" data-i18n="nav_services">Recurring Cleaning</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Contact Column -->
+      <div>
+        <span class="font-sans text-xs font-bold text-on-surface uppercase tracking-[0.15em] mb-4 block" data-i18n="footer_quick">Quick Contact</span>
+        <div class="flex flex-col gap-4">
+          <a
+            href="#"
+            data-whatsapp
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 font-sans text-sm text-on-surface-variant hover:text-primary-container transition-colors duration-200 min-h-[44px]"
+            id="footer-wa-link"
+          >
+            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">chat</span>
+            WhatsApp
+          </a>
+          <a
+            href="sms:+18135457674"
+            class="flex items-center gap-2 font-sans text-sm text-on-surface-variant hover:text-primary-container transition-colors duration-200 min-h-[44px]"
+            id="footer-sms-link"
+          >
+            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">sms</span>
+            SMS: (813) 545-7674
+          </a>
+          <a
+            href="#areas"
+            class="flex items-center gap-2 font-sans text-sm text-on-surface-variant hover:text-primary-container transition-colors duration-200 min-h-[44px]"
+          >
+            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">location_on</span>
+            Tampa Bay Area, FL
+          </a>
+        </div>
+
+        <div class="mt-6 pt-5 border-t border-outline-variant/40">
+          <span class="font-sans text-xs font-bold text-on-surface uppercase tracking-[0.15em] mb-3 block" data-i18n="footer_company">Company</span>
+          <ul class="flex flex-col gap-3">
+            <li><a href="#about-me" class="font-sans text-sm text-on-surface-variant hover:text-primary-container transition-colors duration-200" data-i18n="about_tassia">About MS Cleaning</a></li>
+            <li><a href="#" class="font-sans text-sm text-on-surface-variant hover:text-primary-container transition-colors duration-200">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ══ CONTACT CHOICE MODAL ══ -->
+  <div
+    id="contact-modal"
+    class="fixed inset-0 z-[110] flex items-center justify-center p-4 bg-black/60 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-title"
+  >
+    <!-- Backdrop Close Trigger -->
+    <div class="absolute inset-0" onclick="closeContactModal()"></div>
+
+    <!-- Modal Container -->
+    <div
+      class="relative w-full max-w-md bg-white/95 backdrop-blur-xl rounded-3xl p-6 md:p-8 shadow-[0_25px_60px_-15px_rgba(108,0,81,0.25)] border border-primary-container/10 scale-95 opacity-0 transition-all duration-300"
+      id="modal-container"
+    >
+      <!-- Close Button -->
+      <button
+        onclick="closeContactModal()"
+        class="absolute top-5 right-5 w-10 h-10 flex items-center justify-center rounded-full bg-surface-dim hover:bg-secondary-container/50 text-on-surface-variant hover:text-primary transition-all duration-200"
+        aria-label="Close modal"
+      >
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+
+      <!-- Icon & Header -->
+      <div class="flex flex-col items-center text-center mt-2 mb-6">
+        <div class="w-16 h-16 rounded-2xl bg-secondary-container flex items-center justify-center text-primary-container mb-4 shadow-sm animate-pulse-subtle">
+          <span class="material-symbols-outlined text-[32px]">cleaning_services</span>
+        </div>
+        <h3 id="modal-title" class="font-serif text-2xl md:text-3xl font-bold text-on-surface mb-1">
+          <!-- Dynamic text through JS -->
+        </h3>
+        <p class="font-sans text-xs font-bold text-primary-container uppercase tracking-[0.12em] mb-3" data-i18n="modal_subtitle">
+          Connect Directly with Tássia
+        </p>
+        <p id="modal-description" class="font-sans text-sm text-on-surface-variant leading-relaxed max-w-xs" data-i18n="modal_desc">
+          Choose your preferred channel below. Tássia (owner and founder) will respond immediately to tailor your service.
+        </p>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col gap-3">
+        <!-- WhatsApp Option -->
+        <a
+          id="modal-wa-btn"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center justify-center gap-3 w-full py-4 rounded-2xl bg-[#25D366] hover:bg-[#128C7E] text-white font-sans text-base font-bold shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
+        >
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.665.989 3.3 1.489 5.362 1.49 5.508 0 9.99-4.482 9.993-9.988.001-2.668-1.037-5.176-2.925-7.066C17.14 1.7 14.636.662 11.97.662c-5.512 0-9.998 4.487-10 9.994-.001 2.01.523 3.666 1.517 5.297L2.5 21.5l6.147-1.614zM17.5 14.9c-.3-.15-1.75-.85-2.05-.95-.3-.1-.5-.15-.7.15-.2.3-.75.95-.9.1-.15-.15-.3-.45-1.2-1.05-.7-.6-1.15-1-1.65-1.5-.4-.45-.4-.85-.2-1.15.15-.3.3-.7.45-1.05.15-.3.15-.55.05-.85-.1-.3-.7-1.7-.95-2.35-.25-.6-.5-.5-.7-.5-.2 0-.4 0-.6 0-.2 0-.6.05-.9.4-.3.35-1.15 1.15-1.15 2.8s1.2 3.25 1.35 3.45c.15.2 2.35 3.6 5.7 5.05.8.35 1.4.55 1.9.7.8.25 1.5.2 2.1.1.65-.1 1.75-.7 2-1.4.25-.7.25-1.3.15-1.4-.1-.15-.4-.25-.7-.4z"/>
+          </svg>
+          <span data-i18n="modal_wa_btn">Chat on WhatsApp</span>
+        </a>
+
+        <!-- SMS Option -->
+        <a
+          id="modal-sms-btn"
+          href="#"
+          class="flex items-center justify-center gap-3 w-full py-4 rounded-2xl bg-[#007AFF] hover:bg-[#0056b3] text-white font-sans text-base font-bold shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
+        >
+          <span class="material-symbols-outlined text-[24px]">sms</span>
+          <span data-i18n="modal_sms_btn">Send SMS Text</span>
+        </a>
+      </div>
+
+      <!-- Divider -->
+      <div class="my-5 flex items-center justify-center gap-3">
+        <span class="h-[1px] w-full bg-outline-variant/30"></span>
+        <span class="text-xs font-bold text-on-surface-variant/40 uppercase tracking-[0.2em] whitespace-nowrap" data-i18n="lang_title">Language</span>
+        <span class="h-[1px] w-full bg-outline-variant/30"></span>
+      </div>
+
+      <!-- Quick Call Footer -->
+      <div class="text-center">
+        <p class="font-sans text-xs text-on-surface-variant mb-1">
+          <span data-i18n="modal_footer">Or call directly:</span>
+          <a href="tel:+18135457674" class="text-primary-container hover:text-primary font-bold transition-colors ml-1" id="modal-phone-link">
+            (813) 545-7674
+          </a>
+        </p>
+        <span class="text-[10px] text-on-surface-variant/50 uppercase tracking-widest font-sans" data-i18n="footer_lic">Licensed & Insured</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="./script.js"></script>
+</body>
+</html>
