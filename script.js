@@ -524,7 +524,7 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ── 9. WhatsApp Link Coordinator ── */
   const WA_NUMBER = '18135457674'; // Tássia's real phone number
   const WA_MESSAGE = encodeURIComponent(
-    'Olá! Vi o site da MS Brazil Cleaning e gostaria de saber mais sobre os serviços. Podem me enviar um orçamento? 😊'
+    'Hello! I visited the MS Brazil Cleaning website and would like to learn more about your services. Could you please send me a quote? 😊'
   );
   const WA_URL = `https://wa.me/${WA_NUMBER}?text=${WA_MESSAGE}`;
 
@@ -567,8 +567,8 @@ window.openContactModal = function (service) {
   
   document.getElementById('modal-title').textContent = translatedTitle;
 
-  // Set URLs
-  const msg = serviceMessages[activeLang][service] || serviceMessages[activeLang]['general'];
+  // Set URLs (WhatsApp and SMS pre-defined messages are always in English per user request)
+  const msg = serviceMessages['en'][service] || serviceMessages['en']['general'];
   const waUrl = `https://wa.me/18135457674?text=${encodeURIComponent(msg)}`;
   const smsUrl = `sms:+18135457674?body=${encodeURIComponent(msg)}`;
 
