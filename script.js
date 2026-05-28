@@ -11,11 +11,12 @@ const translations = {
     nav_reviews: "Reviews",
     nav_cta: "Get a Quote",
     mob_cta: "Get a Quote on WhatsApp",
+    footer_lang: "Select Language",
     
     hero_badge: "✨ Tampa Bay Area • Est. 2020",
     hero_title_1: "MS Brazil",
     hero_title_2: "Services",
-    hero_sub: "Tampa's premium house cleaning — <strong class=\"text-white\">Brazilian-level detail</strong>, every time. Meticulous, reliable, and tailored to your home.",
+    hero_sub: "Tampa's premium house cleaning <strong class=\"text-white\">Brazilian Level Detail</strong>, every time. Meticulous, reliable, and tailored to your home.",
     hero_cta_1: "Get a Free Quote",
     hero_cta_2: "Our Services",
     hero_trust: "Trusted by 200+ Tampa homeowners",
@@ -95,7 +96,7 @@ const translations = {
     cta_btn: "Chat on WhatsApp",
     cta_sms: "Prefer a text? SMS us at",
     
-    footer_copyright: "© 2026 MS Brazil Cleaning Services. Brazilian-level detail in every corner.",
+    footer_copyright: "© 2026 MS Brazil Cleaning Services. Brazilian Level Detail in every corner.",
     footer_lic: "Licensed & Insured • Tampa Bay, Florida",
     footer_quick: "Quick Contact",
     footer_company: "Company",
@@ -110,11 +111,12 @@ const translations = {
     nav_reviews: "Reseñas",
     nav_cta: "Presupuesto",
     mob_cta: "Presupuesto por WhatsApp",
+    footer_lang: "Seleccionar Idioma",
     
     hero_badge: "✨ Área de Tampa Bay • Est. 2020",
     hero_title_1: "MS Brazil",
     hero_title_2: "Servicios",
-    hero_sub: "Limpieza residencial premium en Tampa — <strong class=\"text-white\">detalle de nivel brasileño</strong>, siempre. Meticulosa, confiable y adaptada a su hogar.",
+    hero_sub: "Limpieza residencial premium en Tampa <strong class=\"text-white\">detalle de nivel brasileño</strong>, siempre. Meticulosa, confiable y adaptada a su hogar.",
     hero_cta_1: "Presupuesto Gratis",
     hero_cta_2: "Nuestros Servicios",
     hero_trust: "Confiado por más de 200 propietarios en Tampa",
@@ -209,11 +211,12 @@ const translations = {
     nav_reviews: "Avaliações",
     nav_cta: "Orçamento",
     mob_cta: "Orçamento por WhatsApp",
+    footer_lang: "Selecionar Idioma",
     
     hero_badge: "✨ Região de Tampa Bay • Est. 2020",
     hero_title_1: "MS Brazil",
     hero_title_2: "Cleaning",
-    hero_sub: "Limpeza residencial premium em Tampa — <strong class=\"text-white\">detalhamento padrão brasileiro</strong>, sempre. Meticuloso, confiável e sob medida para seu lar.",
+    hero_sub: "Limpeza residencial premium em Tampa <strong class=\"text-white\">detalhamento padrão brasileiro</strong>, sempre. Meticuloso, confiável e sob medida para seu lar.",
     hero_cta_1: "Solicitar Orçamento Grátis",
     hero_cta_2: "Nossos Serviços",
     hero_trust: "Aprovado por mais de 200 proprietários em Tampa",
@@ -320,6 +323,11 @@ window.setLanguage = function (lang) {
     btn.classList.toggle('active', btn.id === `mob-lang-${lang}`);
   });
 
+  // Update active states on footer language selector buttons
+  document.querySelectorAll('.footer-lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.id === `foot-lang-${lang}`);
+  });
+
   // Translate all elements containing data-i18n attribute
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
@@ -340,6 +348,12 @@ window.setLanguage = function (lang) {
 
 /* ── Main DOM Initializer ── */
 document.addEventListener('DOMContentLoaded', function () {
+
+  // Common DOM Elements
+  const navbar = document.getElementById('navbar');
+  const themeColorMeta = document.getElementById('meta-theme-color');
+  const menuBtn = document.getElementById('mobile-menu');
+  const mobileNav = document.getElementById('mobile-nav');
 
   /* ── 1. Progressive Loading & Animations Staircase ── */
   // Immediately activate hero elements so the user sees a styled header right away
@@ -373,29 +387,44 @@ document.addEventListener('DOMContentLoaded', function () {
     carouselObserver.observe(galleryTrack);
   }
 
-  /* ── 3. Navbar Scroll Glass Effect ── */
-  const navbar = document.getElementById('navbar');
-  const themeColorMeta = document.getElementById('meta-theme-color');
+  /* ── 3. Navbar Scroll Glass & Hide Effect ── */
+  let lastScrollY = window.scrollY;
   function updateNavbar() {
-    if (window.scrollY > 60) {
-      navbar.classList.add('scrolled');
+    const currentScrollY = window.scrollY;
+    
+    // Background and color styling changes based on scroll threshold
+    if (currentScrollY > 60) {
+      if (navbar) navbar.classList.add('scrolled');
       if (themeColorMeta) themeColorMeta.setAttribute('content', '#ffffff');
     } else {
-      navbar.classList.remove('scrolled');
+      if (navbar) navbar.classList.remove('scrolled');
       if (themeColorMeta) themeColorMeta.setAttribute('content', '#1b1c1d');
     }
+
+    // Hide-on-scroll down, show-on-scroll up (desktop and mobile)
+    const isMobileMenuOpen = mobileNav && mobileNav.classList.contains('open');
+    if (!isMobileMenuOpen && currentScrollY > 120) {
+      if (currentScrollY > lastScrollY) {
+        if (navbar) navbar.classList.add('nav-hidden');
+      } else {
+        if (navbar) navbar.classList.remove('nav-hidden');
+      }
+    } else {
+      if (navbar) navbar.classList.remove('nav-hidden');
+    }
+    lastScrollY = currentScrollY;
   }
   window.addEventListener('scroll', updateNavbar, { passive: true });
   updateNavbar();
 
   /* ── 4. Mobile Menu Toggle ── */
-  const menuBtn = document.getElementById('mobile-menu');
-  const mobileNav = document.getElementById('mobile-nav');
-
   if (menuBtn && mobileNav) {
     menuBtn.addEventListener('click', function () {
       menuBtn.classList.toggle('open');
       mobileNav.classList.toggle('open');
+      
+      // When opening/closing mobile menu drawer, toggle nav-hidden class to ensure proper placement
+      if (navbar) navbar.classList.remove('nav-hidden');
     });
 
     // Close mobile nav drawer when clicking any link inside it
