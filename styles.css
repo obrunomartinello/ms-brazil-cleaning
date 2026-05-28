@@ -427,7 +427,7 @@ h1, h2, h3, h4, h5, h6 {
   scrollbar-width: none;
   gap: 1rem;
   padding: 1rem 1.25rem 2rem;
-  touch-action: pan-x;
+  touch-action: pan-x pan-y;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
@@ -822,7 +822,16 @@ footer {
 /* ---- Responsive Helpers ---- */
 @media (max-width: 767px) {
   #mobile-menu { display: flex; }
-  .hero-bg { background-attachment: scroll; } /* parallax off on mobile for perf */
+  .hero-bg {
+    background-attachment: scroll; /* parallax off on mobile for perf */
+    background-position: 25% center; /* Focus on the couch and living room furniture on mobile instead of curtains */
+  }
+  #hero {
+    min-height: 80vh !important; /* Prevent excessive tall stretching on narrow mobile screens, keeping background sharp */
+  }
+  .carousel-fade-left, .carousel-fade-right {
+    width: 30px; /* Narrower fade mask on mobile so images are clear and high contrast */
+  }
 
   /* Stack hero buttons vertically, full width on mobile */
   .btn-primary, .btn-ghost {

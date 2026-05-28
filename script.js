@@ -375,11 +375,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* ── 3. Navbar Scroll Glass Effect ── */
   const navbar = document.getElementById('navbar');
+  const themeColorMeta = document.getElementById('meta-theme-color');
   function updateNavbar() {
     if (window.scrollY > 60) {
       navbar.classList.add('scrolled');
+      if (themeColorMeta) themeColorMeta.setAttribute('content', '#ffffff');
     } else {
       navbar.classList.remove('scrolled');
+      if (themeColorMeta) themeColorMeta.setAttribute('content', '#1b1c1d');
     }
   }
   window.addEventListener('scroll', updateNavbar, { passive: true });
