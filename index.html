@@ -190,7 +190,9 @@
     </div>
   </nav>
 
-  <main>
+  <!-- Strict Layout Boundary Wrapper to absolutely prevent horizontal overflow rubber-banding, especially on iOS Safari -->
+  <div class="overflow-x-hidden w-full max-w-full relative">
+    <main>
 
     <!-- ══ HERO SECTION ══ -->
     <section id="hero" class="relative min-h-screen flex items-center">
@@ -435,7 +437,7 @@
       </div>
 
       <!-- Carousel Track (Scrolling triggered async on visible) -->
-      <div class="w-full relative reveal">
+      <div class="w-full relative reveal overflow-hidden">
         <div class="carousel-fade-left" aria-hidden="true"></div>
         <div class="carousel-fade-right" aria-hidden="true"></div>
 
@@ -809,6 +811,7 @@
 
     </div>
   </footer>
+  </div>
 
   <!-- ══ CONTACT CHOICE MODAL ══ -->
   <div
