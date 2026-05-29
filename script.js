@@ -14,8 +14,8 @@ const translations = {
     footer_lang: "Select Language",
     
     hero_badge: "✨ Tampa Bay Area • Est. 2020",
-    hero_title_1: "MS Brazil",
-    hero_title_2: "Services",
+    hero_title_1: "Premium House Cleaning",
+    hero_title_2: "in Tampa Bay",
     hero_sub: "Tampa's premium house cleaning <strong class=\"text-white\">Brazilian Level Detail</strong>, every time. Meticulous, reliable, and tailored to your home.",
     hero_cta_1: "Get a Free Quote",
     hero_cta_2: "Our Services",
@@ -114,8 +114,8 @@ const translations = {
     footer_lang: "Seleccionar Idioma",
     
     hero_badge: "✨ Área de Tampa Bay • Est. 2020",
-    hero_title_1: "MS Brazil",
-    hero_title_2: "Servicios",
+    hero_title_1: "Limpieza de Casas Premium",
+    hero_title_2: "en Tampa Bay",
     hero_sub: "Limpieza residencial premium en Tampa <strong class=\"text-white\">detalle de nivel brasileño</strong>, siempre. Meticulosa, confiable y adaptada a su hogar.",
     hero_cta_1: "Presupuesto Gratis",
     hero_cta_2: "Nuestros Servicios",
@@ -214,8 +214,8 @@ const translations = {
     footer_lang: "Selecionar Idioma",
     
     hero_badge: "✨ Região de Tampa Bay • Est. 2020",
-    hero_title_1: "MS Brazil",
-    hero_title_2: "Cleaning",
+    hero_title_1: "Limpeza de Casas Premium",
+    hero_title_2: "em Tampa Bay",
     hero_sub: "Limpeza residencial premium em Tampa <strong class=\"text-white\">detalhamento padrão brasileiro</strong>, sempre. Meticuloso, confiável e sob medida para seu lar.",
     hero_cta_1: "Solicitar Orçamento Grátis",
     hero_cta_2: "Nossos Serviços",
