@@ -398,7 +398,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (themeColorMeta) themeColorMeta.setAttribute('content', '#ffffff');
     } else {
       if (navbar) navbar.classList.remove('scrolled');
-      if (themeColorMeta) themeColorMeta.setAttribute('content', '#1b1c1d');
+      if (themeColorMeta) themeColorMeta.setAttribute('content', '#3D0A2E');
     }
 
     // Hide-on-scroll down, show-on-scroll up (desktop and mobile)

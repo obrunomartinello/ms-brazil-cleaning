@@ -71,7 +71,7 @@ html {
 }
 
 body {
-  background-color: var(--surface);
+  background-color: #3D0A2E; /* Wine background matching top status bar blending */
   color: var(--on-surface);
   font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -79,6 +79,13 @@ body {
   overflow-x: hidden;
   width: 100%;
   max-width: 100%;
+  min-height: 100dvh; /* dvh = dynamic viewport height (respeita iOS) */
+}
+
+/* Safe Area Inset bottom to protect iOS home bar */
+main,
+footer {
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 /* ---- Typography ---- */
@@ -109,6 +116,9 @@ h1, h2, h3, h4, h5, h6 {
               backdrop-filter 0.6s cubic-bezier(0.16, 1, 0.3, 1),
               transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
   background: transparent;
+  padding-top: env(safe-area-inset-top);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
 }
 #navbar.nav-hidden {
   transform: translateY(-100%);
