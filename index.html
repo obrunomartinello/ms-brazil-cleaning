@@ -6,7 +6,8 @@
   <meta name="theme-color" id="meta-theme-color" content="#1b1c1d" />
 
   <!-- Progressive Resource Preloading (Staircase Load Priority) -->
-  <link rel="preload" fetchpriority="high" as="image" href="./assets/images/logo-new.png" type="image/png" />
+  <link rel="preload" fetchpriority="high" as="image" href="./assets/images/logo-white.png" type="image/png" />
+  <link rel="preload" fetchpriority="high" as="image" href="./assets/images/logo-dark.png" type="image/png" />
   <link rel="preload" fetchpriority="high" as="image" href="./assets/images/IMG_2539.webp" type="image/webp" />
 
   <!-- SEO Meta Tags -->
@@ -23,8 +24,8 @@
   <meta property="og:image" content="https://msbrazilcleaning.com/assets/images/IMG_2539.webp" />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="./assets/images/logo-new.png" />
-  <link rel="apple-touch-icon" href="./assets/images/logo-new.png" />
+  <link rel="icon" type="image/png" href="./assets/images/logo-dark.png" />
+  <link rel="apple-touch-icon" href="./assets/images/logo-dark.png" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -115,16 +116,26 @@
   <nav id="navbar" role="navigation" aria-label="Main navigation">
     <div class="max-w-[1200px] mx-auto px-4 md:px-16 flex justify-between items-center h-20">
 
-      <!-- Logo (New brand logo with transparent background) -->
-      <a href="#hero" class="flex items-center gap-3 group flex-1 md:flex-none" aria-label="MS Brazil Cleaning - Home">
+      <!-- Spacer for mobile centering (takes up equal flex space on left) -->
+      <div class="flex-1 md:hidden"></div>
+
+      <!-- Logo (New brand logo with transparent and dark variants) -->
+      <a href="#hero" class="flex-1 md:flex-none flex justify-center md:justify-start items-center gap-3 group" aria-label="MS Brazil Cleaning - Home">
         <img
-          src="./assets/images/logo-new.png"
+          src="./assets/images/logo-white.png"
           alt="MS Brazil Cleaning Logo"
-          class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-          width="48"
-          height="48"
+          class="logo-white h-16 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+          width="64"
+          height="64"
         />
-        <span class="font-serif text-base sm:text-lg font-bold text-primary-container group-hover:text-primary transition-colors duration-200" data-i18n="hero_title_1">
+        <img
+          src="./assets/images/logo-dark.png"
+          alt="MS Brazil Cleaning Logo"
+          class="logo-dark hidden h-16 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+          width="64"
+          height="64"
+        />
+        <span class="font-serif text-base sm:text-lg font-bold text-primary-container hidden md:block group-hover:text-primary transition-colors duration-200" data-i18n="hero_title_1">
           MS Brazil Cleaning
         </span>
       </a>
@@ -137,8 +148,8 @@
         <a href="#testimonials" class="nav-link" data-section="testimonials" data-i18n="nav_reviews">Reviews</a>
       </div>
 
-      <!-- CTA + Language Selector + Hamburger -->
-      <div class="flex items-center gap-3">
+      <!-- CTA + Language Selector + Hamburger (takes up equal flex space on right on mobile) -->
+      <div class="flex-1 md:flex-none flex justify-end items-center gap-3">
         
         <!-- Desktop Language Selector Tab Buttons -->
         <div class="hidden lg:flex items-center gap-1.5 border-r border-outline-variant/30 pr-4 mr-2" id="lang-selector">
@@ -704,7 +715,7 @@
       <!-- Brand Column (Featuring new brand logo) -->
       <div class="sm:col-span-2 md:col-span-1">
         <div class="flex flex-col gap-3 mb-5">
-          <img src="./assets/images/logo-new.png" alt="MS Brazil Cleaning Logo" class="h-20 w-auto object-contain self-start" />
+          <img src="./assets/images/logo-dark.png" alt="MS Brazil Cleaning Logo" class="h-28 md:h-32 w-auto object-contain self-start" />
           <span class="font-serif text-2xl font-bold text-primary-container">MS Brazil Cleaning</span>
         </div>
         <p class="font-sans text-sm text-on-surface-variant leading-relaxed mb-3" data-i18n="footer_copyright">

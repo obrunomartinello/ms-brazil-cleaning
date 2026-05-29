@@ -420,11 +420,19 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ── 4. Mobile Menu Toggle ── */
   if (menuBtn && mobileNav) {
     menuBtn.addEventListener('click', function () {
+      const isOpening = !mobileNav.classList.contains('open');
       menuBtn.classList.toggle('open');
       mobileNav.classList.toggle('open');
       
       // When opening/closing mobile menu drawer, toggle nav-hidden class to ensure proper placement
-      if (navbar) navbar.classList.remove('nav-hidden');
+      if (navbar) {
+        navbar.classList.remove('nav-hidden');
+        if (isOpening) {
+          navbar.classList.add('mobile-open');
+        } else {
+          navbar.classList.remove('mobile-open');
+        }
+      }
     });
 
     // Close mobile nav drawer when clicking any link inside it
@@ -432,6 +440,7 @@ document.addEventListener('DOMContentLoaded', function () {
       link.addEventListener('click', () => {
         menuBtn.classList.remove('open');
         mobileNav.classList.remove('open');
+        if (navbar) navbar.classList.remove('mobile-open');
       });
     });
   }

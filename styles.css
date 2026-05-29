@@ -114,12 +114,30 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-100%);
 }
 
-#navbar.scrolled {
-  background: rgba(255, 255, 255, 0.94);
+#navbar.scrolled,
+#navbar.mobile-open {
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 4px 30px rgba(108, 0, 81, 0.05);
   border-bottom: 1px solid rgba(217, 192, 203, 0.15);
+}
+
+/* Logo Visibility Controls */
+#navbar .logo-white {
+  display: block;
+}
+#navbar .logo-dark {
+  display: none !important;
+}
+
+#navbar.scrolled .logo-white,
+#navbar.mobile-open .logo-white {
+  display: none !important;
+}
+#navbar.scrolled .logo-dark,
+#navbar.mobile-open .logo-dark {
+  display: block !important;
 }
 
 /* Navbar Transparent Defaults */
@@ -158,29 +176,36 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
 }
 
-/* Navbar Scrolled Overrides */
-#navbar.scrolled .nav-link {
+/* Navbar Scrolled / Mobile Open Overrides */
+#navbar.scrolled .nav-link,
+#navbar.mobile-open .nav-link {
   color: var(--on-surface-variant);
 }
-#navbar.scrolled .nav-link::after {
+#navbar.scrolled .nav-link::after,
+#navbar.mobile-open .nav-link::after {
   background: var(--primary-container);
 }
-#navbar.scrolled .nav-link:hover {
+#navbar.scrolled .nav-link:hover,
+#navbar.mobile-open .nav-link:hover {
   color: var(--primary-container);
 }
-#navbar.scrolled .font-serif.text-primary-container {
+#navbar.scrolled .font-serif.text-primary-container,
+#navbar.mobile-open .font-serif.text-primary-container {
   color: var(--primary-container) !important;
 }
-#navbar.scrolled #mobile-menu span {
-  background: var(--on-surface);
+#navbar.scrolled #mobile-menu span,
+#navbar.mobile-open #mobile-menu span {
+  background: var(--on-surface) !important;
 }
-#navbar.scrolled #nav-cta-btn {
+#navbar.scrolled #nav-cta-btn,
+#navbar.mobile-open #nav-cta-btn {
   background-color: var(--primary-container);
   border-color: transparent;
   color: #ffffff;
   box-shadow: 0 4px 16px rgba(108, 0, 81, 0.15);
 }
-#navbar.scrolled #nav-cta-btn:hover {
+#navbar.scrolled #nav-cta-btn:hover,
+#navbar.mobile-open #nav-cta-btn:hover {
   background-color: var(--primary);
   color: #ffffff;
   box-shadow: 0 8px 24px rgba(108, 0, 81, 0.3);
@@ -200,7 +225,7 @@ h1, h2, h3, h4, h5, h6 {
   inset: 0;
   background-image: url('./assets/images/IMG_2539.webp');
   background-size: cover;
-  background-position: center;
+  background-position: 75% center; /* Prioritize the right-side sofa/living room on narrow mobile screens */
   background-attachment: scroll; /* Clean hardware-accelerated scroll */
   transform: scale(1.05);
   transition: transform 0.1s linear;
@@ -524,6 +549,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-whatsapp {
   display: inline-flex;
   align-items: center;
+  justify-content: center; /* Centers icon and text when w-full is active on mobile */
   gap: 0.75rem;
   background: #ffffff;
   color: var(--primary);
@@ -921,17 +947,20 @@ footer {
 }
 
 /* Scrolled Navbar State for Language Buttons */
-#navbar.scrolled .lang-btn {
+#navbar.scrolled .lang-btn,
+#navbar.mobile-open .lang-btn {
   color: var(--on-surface-variant);
   border-color: var(--outline-variant);
   background: rgba(108, 0, 81, 0.02);
 }
-#navbar.scrolled .lang-btn:hover {
+#navbar.scrolled .lang-btn:hover,
+#navbar.mobile-open .lang-btn:hover {
   color: var(--primary);
   border-color: var(--primary);
   background: rgba(108, 0, 81, 0.06);
 }
-#navbar.scrolled .lang-btn.active {
+#navbar.scrolled .lang-btn.active,
+#navbar.mobile-open .lang-btn.active {
   color: #ffffff;
   background: var(--primary-container) !important;
   border-color: var(--primary-container) !important;
