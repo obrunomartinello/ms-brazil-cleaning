@@ -613,11 +613,15 @@ window.closeContactModal = function () {
   document.body.style.overflow = '';
 };
 
-// Register Service Worker for PWA support
+// Unregister Service Workers to prevent stale cache issues
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js')
-      .then((reg) => console.log('Service Worker registered successfully!', reg.scope))
-      .catch((err) => console.log('Service Worker registration failed:', err));
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+      for(let registration of registrations) {
+        registration.unregister().then(function(boolean) {
+          console.log('Service worker unregistered');
+        });
+      }
+    });
   });
 }
