@@ -6,8 +6,8 @@
   <meta name="theme-color" id="meta-theme-color" content="#1b1c1d" />
 
   <!-- Progressive Resource Preloading (Staircase Load Priority) -->
-  <link rel="preload" fetchpriority="high" as="image" href="./assets/images/logo.png" type="image/png" />
-  <link rel="preload" fetchpriority="high" as="image" href="./assets/images/apptImage_7.jpeg" type="image/jpeg" />
+  <link rel="preload" fetchpriority="high" as="image" href="./assets/images/logo-new.png" type="image/png" />
+  <link rel="preload" fetchpriority="high" as="image" href="./assets/images/IMG_2539.webp" type="image/webp" />
 
   <!-- SEO Meta Tags -->
   <title>MS Brazil Cleaning | Premium House Cleaning Tampa Bay, Florida</title>
@@ -20,11 +20,11 @@
   <meta property="og:title" content="MS Brazil Cleaning | Premium House Cleaning Tampa Bay" />
   <meta property="og:description" content="Experience Brazilian-level detail in every corner. Tampa's most meticulous house cleaning service." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://msbrazilcleaning.com/assets/images/apptImage_7.jpeg" />
+  <meta property="og:image" content="https://msbrazilcleaning.com/assets/images/IMG_2539.webp" />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="./assets/images/logo.png" />
-  <link rel="apple-touch-icon" href="./assets/images/logo.png" />
+  <link rel="icon" type="image/png" href="./assets/images/logo-new.png" />
+  <link rel="apple-touch-icon" href="./assets/images/logo-new.png" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,12 +46,12 @@
             secondary: '#705765',
             'secondary-container': '#f8d7e8',
             'on-secondary-container': '#755b6a',
-            surface: '#ffffff',
-            'surface-dim': '#f5f3f4',
-            'surface-container-lowest': '#ffffff',
-            'surface-container-low': '#ffffff',
-            'surface-container': '#ffffff',
-            'surface-container-high': '#f9f7f8',
+            surface: '#f8f8f9',
+            'surface-dim': '#eeeced',
+            'surface-container-lowest': '#f4f3f5',
+            'surface-container-low': '#f0eef1',
+            'surface-container': '#f6f5f6',
+            'surface-container-high': '#eceaec',
             'on-surface': '#1b1c1d',
             'on-surface-variant': '#54424b',
             outline: '#86717b',
@@ -82,7 +82,7 @@
     "url": "https://msbrazilcleaning.com",
     "telephone": "+1-813-545-7674",
     "priceRange": "$$",
-    "image": "https://msbrazilcleaning.com/assets/images/apptImage_7.jpeg",
+    "image": "https://msbrazilcleaning.com/assets/images/IMG_2539.webp",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Tampa",
@@ -115,16 +115,16 @@
   <nav id="navbar" role="navigation" aria-label="Main navigation">
     <div class="max-w-[1200px] mx-auto px-4 md:px-16 flex justify-between items-center h-20">
 
-      <!-- Logo (Larger official brand logo) -->
-      <a href="#hero" class="flex items-center gap-3 group" aria-label="MS Brazil Cleaning - Home">
+      <!-- Logo (New brand logo with transparent background) -->
+      <a href="#hero" class="flex items-center gap-3 group flex-1 md:flex-none" aria-label="MS Brazil Cleaning - Home">
         <img
-          src="./assets/images/logo.png"
+          src="./assets/images/logo-new.png"
           alt="MS Brazil Cleaning Logo"
-          class="h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-          width="56"
-          height="56"
+          class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+          width="48"
+          height="48"
         />
-        <span class="font-serif text-lg font-bold text-primary-container hidden sm:block group-hover:text-primary transition-colors duration-200" data-i18n="hero_title_1">
+        <span class="font-serif text-base sm:text-lg font-bold text-primary-container group-hover:text-primary transition-colors duration-200" data-i18n="hero_title_1">
           MS Brazil Cleaning
         </span>
       </a>
@@ -197,7 +197,6 @@
     <!-- ══ HERO SECTION ══ -->
     <section id="hero" class="relative min-h-screen flex items-center">
 
-      <!-- Parallax Background (High priority decode to avoid layout shift) -->
       <div class="hero-bg" role="img" aria-label="A beautifully cleaned home interior" fetchpriority="high"></div>
 
       <!-- Dark Overlay -->
@@ -423,8 +422,8 @@
     </section>
 
     <!-- ══ RESULTS GALLERY (Infinite Carousel) ══ -->
-    <section class="py-20 md:py-32 bg-surface-container-lowest border-y border-outline-variant/30 overflow-hidden" id="gallery">
-      <div class="max-w-[1200px] mx-auto px-5 md:px-16 mb-12 md:mb-16">
+    <section class="py-16 md:py-24 bg-surface-container-lowest overflow-hidden" id="gallery">
+      <div class="max-w-[1200px] mx-auto px-5 md:px-16 mb-10 md:mb-14">
         <div class="text-center reveal">
           <p class="section-label" data-i18n="gallery_label">Our Work</p>
           <h2 class="font-serif text-3xl md:text-5xl font-bold text-on-surface mb-4 tracking-tight" data-i18n="gallery_title">
@@ -438,32 +437,29 @@
 
       <!-- Carousel Track (Scrolling triggered async on visible) -->
       <div class="w-full relative reveal overflow-hidden">
-        <div class="carousel-fade-left" aria-hidden="true"></div>
-        <div class="carousel-fade-right" aria-hidden="true"></div>
-
         <div class="carousel-track" id="gallery-track" aria-label="Project gallery" role="region">
           <!-- Set 1 -->
-          <div class="carousel-item ambient-shadow">
+          <div class="carousel-item">
             <img src="./assets/images/apptImage_7.jpeg" alt="Spotlessly cleaned living area" loading="lazy" decoding="async" />
           </div>
-          <div class="carousel-item ambient-shadow">
+          <div class="carousel-item">
             <img src="./assets/images/apptImage_1.jpeg" alt="Immaculate kitchen surfaces" loading="lazy" decoding="async" />
           </div>
-          <div class="carousel-item ambient-shadow">
+          <div class="carousel-item">
             <img src="./assets/images/apptImage_12.jpeg" alt="Pristine room after cleaning" loading="lazy" decoding="async" />
           </div>
-          <div class="carousel-item ambient-shadow">
+          <div class="carousel-item">
             <img src="./assets/images/apptImage_16.jpeg" alt="Crystal clear floors and surfaces" loading="lazy" decoding="async" />
           </div>
-          <div class="carousel-item ambient-shadow">
+          <div class="carousel-item">
             <img src="./assets/images/apptImage_17.jpeg" alt="Spotless appliances and counters" loading="lazy" decoding="async" />
           </div>
           <!-- Set 2 (duplicate for infinite loop) -->
-          <div class="carousel-item ambient-shadow" aria-hidden="true"><img src="./assets/images/apptImage_7.jpeg" alt="" loading="lazy" decoding="async" /></div>
-          <div class="carousel-item ambient-shadow" aria-hidden="true"><img src="./assets/images/apptImage_1.jpeg" alt="" loading="lazy" decoding="async" /></div>
-          <div class="carousel-item ambient-shadow" aria-hidden="true"><img src="./assets/images/apptImage_12.jpeg" alt="" loading="lazy" decoding="async" /></div>
-          <div class="carousel-item ambient-shadow" aria-hidden="true"><img src="./assets/images/apptImage_16.jpeg" alt="" loading="lazy" decoding="async" /></div>
-          <div class="carousel-item ambient-shadow" aria-hidden="true"><img src="./assets/images/apptImage_17.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="carousel-item" aria-hidden="true"><img src="./assets/images/apptImage_7.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="carousel-item" aria-hidden="true"><img src="./assets/images/apptImage_1.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="carousel-item" aria-hidden="true"><img src="./assets/images/apptImage_12.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="carousel-item" aria-hidden="true"><img src="./assets/images/apptImage_16.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="carousel-item" aria-hidden="true"><img src="./assets/images/apptImage_17.jpeg" alt="" loading="lazy" decoding="async" /></div>
         </div>
       </div>
     </section>
@@ -705,10 +701,10 @@
   <footer class="bg-surface-container-low border-t border-outline-variant py-12 md:py-16">
     <div class="max-w-[1200px] mx-auto px-5 md:px-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-12">
 
-      <!-- Brand Column (Featuring large official brand logo) -->
+      <!-- Brand Column (Featuring new brand logo) -->
       <div class="sm:col-span-2 md:col-span-1">
         <div class="flex flex-col gap-3 mb-5">
-          <img src="./assets/images/logo.png" alt="MS Brazil Cleaning Logo" class="h-24 w-auto object-contain self-start" />
+          <img src="./assets/images/logo-new.png" alt="MS Brazil Cleaning Logo" class="h-20 w-auto object-contain self-start" />
           <span class="font-serif text-2xl font-bold text-primary-container">MS Brazil Cleaning</span>
         </div>
         <p class="font-sans text-sm text-on-surface-variant leading-relaxed mb-3" data-i18n="footer_copyright">
