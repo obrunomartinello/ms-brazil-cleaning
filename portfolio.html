@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" id="meta-theme-color" content="#3D0A2E" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="MS Brazil" />
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192x192.png" />
+
+  <!-- Progressive Resource Preloading (Staircase Load Priority) -->
+  <link rel="preload" fetchpriority="high" as="image" href="./assets/images/logo-white.png" type="image/png" />
+  <link rel="preload" fetchpriority="high" as="image" href="./assets/images/logo-dark.png" type="image/png" />
+  <link rel="preload" fetchpriority="high" as="image" href="./assets/images/IMG_2539.webp" type="image/webp" />
+
+  <!-- SEO Meta Tags -->
+  <title>House Cleaning Tampa FL | MS Brazil Cleaning Services</title>
+  <meta name="description" content="Premium house cleaning, deep cleaning & move-in/out services in Tampa, FL. Experience Brazilian-level detail. Licensed & insured. Get a free quote!" />
+  <meta name="keywords" content="House Cleaning Tampa FL, maid service Tampa, deep cleaning Tampa, move-in move-out cleaning Tampa, post-construction cleaning Tampa, cleaning services Lutz FL, cleaning services Wesley Chapel FL, cleaning services Land O' Lakes FL, cleaning services Odessa FL, residential cleaning Tampa Bay, licensed and insured cleaning Tampa" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://msbrazilcleaning.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="House Cleaning Tampa FL | MS Brazil Cleaning Services" />
+  <meta property="og:description" content="Premium house cleaning, deep cleaning & move-in/out services in Tampa, FL. Experience Brazilian-level detail. Licensed & insured. Get a free quote!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://msbrazilcleaning.com/assets/images/IMG_2539.webp" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="House Cleaning Tampa FL | MS Brazil Cleaning Services" />
+  <meta name="twitter:description" content="Premium house cleaning, deep cleaning & move-in/out services in Tampa, FL. Experience Brazilian-level detail. Licensed & insured. Get a free quote!" />
+  <meta name="twitter:image" content="https://msbrazilcleaning.com/assets/images/IMG_2539.webp" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/images/logo-dark.png" />
+  <link rel="apple-touch-icon" href="./assets/images/logo-dark.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+  <!-- Tailwind CSS (Compiled) -->
+  <link rel="stylesheet" href="./tailwind-built.css?v=7" />
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./styles.css?v=7" />
+
+  <!-- JSON-LD: LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CleaningService",
+    "name": "MS Brazil Cleaning Services",
+    "description": "Premium house cleaning services in Tampa Bay, Florida. Brazilian-level detail for deep cleaning, move-in/out, and post-construction cleaning.",
+    "url": "https://msbrazilcleaning.com",
+    "telephone": "+1-813-545-7674",
+    "priceRange": "$$",
+    "image": "https://msbrazilcleaning.com/assets/images/IMG_2539.webp",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tampa",
+      "addressRegion": "FL",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 28.0506327,
+      "longitude": -82.72397295
+    },
+    "areaServed": ["Tampa", "Lutz", "Odessa", "Wesley Chapel", "St. Petersburg", "Clearwater", "Brandon", "Riverview", "Seminole", "Spring Hill", "Land O Lakes", "Temple Terrace"],
+    "openingHours": "Mo-Sa 08:00-18:00",
+    "sameAs": [
+      "https://www.facebook.com/msbrazilcleaning",
+      "https://www.instagram.com/msbrazilcleaning"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "200"
+    }
+  }
+  </script>
+</head>
+
+<body class="bg-surface text-on-surface overflow-x-hidden">
+
+  <!-- ══ NAVBAR ══ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="max-w-[1200px] mx-auto px-4 md:px-16 flex justify-between items-center h-20">
+
+      <!-- Spacer for mobile centering (takes up equal flex space on left) -->
+      <div class="flex-1 md:hidden"></div>
+
+      <!-- Logo (New brand logo with transparent and dark variants) -->
+      <a href="#hero" class="flex-1 md:flex-none flex justify-center md:justify-start items-center group" aria-label="MS Brazil Cleaning - Home">
+        <img
+          src="./assets/images/logo-white.png"
+          alt="MS Brazil Cleaning Logo"
+          class="logo-white h-16 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+          width="64"
+          height="64"
+        />
+        <img
+          src="./assets/images/logo-dark.png"
+          alt="MS Brazil Cleaning Logo"
+          class="logo-dark hidden h-16 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+          width="64"
+          height="64"
+        />
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="./index.html#services" class="nav-link" data-i18n="nav_services">Services</a>
+        <a href="./index.html#about-me" class="nav-link" data-i18n="nav_about">About MS Cleaning</a>
+        <a href="#" class="nav-link text-primary-container" data-i18n="nav_gallery">Gallery / Portfolio</a>
+        <a href="./index.html#areas" class="nav-link" data-i18n="nav_areas">Coverage Area</a>
+        <a href="./index.html#testimonials" class="nav-link" data-i18n="nav_reviews">Reviews</a>
+      </div>
+
+      <!-- CTA + Language Selector + Hamburger (takes up equal flex space on right on mobile) -->
+      <div class="flex-1 md:flex-none flex justify-end items-center gap-3">
+        
+        <!-- Desktop Language Selector Tab Buttons -->
+        <div class="hidden lg:flex items-center gap-1.5 border-r border-outline-variant/30 pr-4 mr-2" id="lang-selector">
+          <button onclick="setLanguage('en')" class="lang-btn px-2 py-1 rounded text-base transition-all duration-200" id="btn-lang-en" title="English">🇺🇸</button>
+          <button onclick="setLanguage('es')" class="lang-btn px-2 py-1 rounded text-base transition-all duration-200" id="btn-lang-es" title="Español">🇪🇸</button>
+          <button onclick="setLanguage('pt')" class="lang-btn px-2 py-1 rounded text-base transition-all duration-200" id="btn-lang-pt" title="Português">🇧🇷</button>
+        </div>
+
+        <a
+          href="javascript:void(0)"
+          onclick="openContactModal('general')"
+          class="hidden sm:inline-flex items-center gap-2 bg-primary-container text-white px-5 py-2.5 rounded-lg font-sans text-sm font-bold hover:bg-primary transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 min-h-[44px]"
+          id="nav-cta-btn"
+        >
+          <span class="material-symbols-outlined text-[18px]">chat</span>
+          <span data-i18n="nav_cta">Get a Quote</span>
+        </a>
+
+        <!-- Hamburger (mobile) -->
+        <button id="mobile-menu" aria-label="Open menu" aria-expanded="false" class="md:hidden min-w-[44px] min-h-[44px] flex items-center justify-center">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div id="mobile-nav" class="mobile-nav md:hidden" role="dialog" aria-label="Mobile navigation">
+      
+      <!-- Mobile Drawer Language Selector -->
+      <div class="flex items-center gap-3 py-3 border-b border-outline-variant/20 mb-2" id="mobile-lang-selector">
+        <span class="text-xs font-bold text-on-surface-variant uppercase tracking-wider" data-i18n="lang_title">Language:</span>
+        <div class="flex gap-2">
+          <button onclick="setLanguage('en')" class="mobile-lang-btn px-3 py-1 rounded text-lg transition-all duration-200" id="mob-lang-en" title="English">🇺🇸</button>
+          <button onclick="setLanguage('es')" class="mobile-lang-btn px-3 py-1 rounded text-lg transition-all duration-200" id="mob-lang-es" title="Español">🇪🇸</button>
+          <button onclick="setLanguage('pt')" class="mobile-lang-btn px-3 py-1 rounded text-lg transition-all duration-200" id="mob-lang-pt" title="Português">🇧🇷</button>
+        </div>
+      </div>
+
+      <a href="#services" data-i18n="nav_services">Services</a>
+      <a href="#about-me" data-i18n="about_tassia">About MS Cleaning</a>
+      <a href="#areas" data-i18n="nav_areas">Coverage Area</a>
+      <a href="#testimonials" data-i18n="nav_reviews">Reviews</a>
+      <a href="javascript:void(0)" onclick="openContactModal('general')" class="mt-3 flex items-center gap-2 text-primary-container font-bold">
+        <span class="material-symbols-outlined text-[18px]">chat</span>
+        <span data-i18n="mob_cta">Get a Quote</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Strict Layout Boundary Wrapper to absolutely prevent horizontal overflow rubber-banding, especially on iOS Safari -->
+  <div class="overflow-x-hidden w-full max-w-full relative">
+    <main class="pt-20">
+      <!-- ══ HERO SECTION ══ -->
+      <section class="bg-surface-dim py-16 md:py-24 text-center">
+        <div class="max-w-[800px] mx-auto px-5">
+          <h1 class="font-serif text-4xl md:text-5xl font-bold text-on-surface mb-4">
+            Brazilian Level Detailing in Action
+          </h1>
+          data-whatsapp
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-whatsapp mb-5 w-full sm:w-auto"
+          id="footer-cta-btn"
+        >
+          <span class="material-symbols-outlined text-[28px] text-green-500" aria-hidden="true">chat</span>
+          <span data-i18n="cta_btn">Chat on WhatsApp</span>
+        </a>
+
+        <!-- SMS Alternative -->
+        <p class="font-sans text-sm text-white/70">
+          <span data-i18n="cta_sms">Prefer a text? SMS us at</span>
+          <a
+            href="sms:+18135457674"
+            class="underline underline-offset-2 text-white/90 hover:text-white font-semibold transition-colors duration-200 ml-1"
+            id="footer-sms-btn"
+          >
+            (813) 545-7674
+          </a>
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="bg-surface-container-low border-t border-outline-variant py-12 md:py-16">
+    <div class="max-w-[1200px] mx-auto px-5 md:px-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-12">
+
+      <!-- Brand Column (Featuring new brand logo) -->
+      <div class="sm:col-span-2 md:col-span-1">
+        <div class="flex flex-col gap-3 mb-5">
+          <img src="./assets/images/logo-dark.png" alt="MS Brazil Cleaning Logo" class="h-28 md:h-32 w-auto object-contain self-start" />
+          <span class="font-serif text-2xl font-bold text-primary-container">MS Brazil Cleaning</span>
+        </div>
+        <p class="font-sans text-sm text-on-surface-variant leading-relaxed mb-3" data-i18n="footer_copyright">
+          &copy; 2026 MS Brazil Cleaning Services. Brazilian-level detail in every corner.
+        </p>
+        <p class="font-sans text-xs text-on-surface-variant/60" data-i18n="footer_lic">
+          Licensed &amp; Insured &middot; Tampa Bay, Florida
+        </p>
+        <!-- Social Links with small logos -->
+        <div class="flex items-center gap-4 mt-5">
+          <a
+            href="https://www.facebook.com/msbrazilcleaning"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 text-on-surface-variant hover:text-primary-container transition-colors duration-200 text-xs font-semibold"
+            aria-label="MS Brazil Cleaning on Facebook"
+          >
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+            </svg>
+            Facebook
+          </a>
+          <a
+            href="https://www.instagram.com/msbrazilcleaning"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 text-on-surface-variant hover:text-primary-container transition-colors duration-200 text-xs font-semibold"
+            aria-label="MS Brazil Cleaning on Instagram"
+          >
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.01 3.71.054 1.14.051 1.96.23 2.673.508.75.291 1.39.681 2.03 1.32.64.64 1.03 1.28 1.32 2.03.28.717.459 1.537.51 2.673.043.926.054 1.28.054 3.71s-.01 2.784-.054 3.71c-.051 1.14-.23 1.96-.508 2.673-.291.75-.681 1.39-1.32 2.03-.64.64-1.28 1.03-2.03 1.32-.717.28-1.537.459-2.673.51-.926.043-1.28.054-3.71.054s-2.784-.01-3.71-.054c-1.14-.051-1.96-.23-2.673-.508-.75-.291-1.39-.681-2.03-1.32-.64-.64-1.03-1.28-1.32-2.03-.28-.717-.459-1.537-.51-2.673-.043-.926-.054-1.28-.054-3.71s.01-2.784.054-3.71c.051-1.14.23-1.96.508-2.673.291-.75.681-1.39 1.32-2.03.64-.64 1.28-1.03 2.03-1.32.717-.28 1.537-.459 2.673-.51.926-.043 1.28-.054 3.71-.054zM12 5.902c-3.369 0-6.098 2.729-6.098 6.098s2.729 6.098 6.098 6.098 6.098-2.729 6.098-6.098S15.369 5.902 12 5.902zm0 9.996c-2.152 0-3.898-1.746-3.898-3.898S9.848 8.102 12 8.102s3.898 1.746 3.898 3.898-1.746 3.898-3.898 3.898zm6.405-11.758a1.22 1.22 0 100 2.44 1.22 1.22 0 000-2.44z" clip-rule="evenodd" />
+            </svg>
+            Instagram
+          </a>
+        </div>
+        <!-- Language Switcher in Footer -->
+        <div class="mt-6 pt-5 border-t border-outline-variant/40 flex flex-col gap-2.5">
+          <span class="font-sans text-xs font-bold text-on-surface uppercase tracking-[0.15em] mb-1 block" data-i18n="footer_lang">Select Language</span>
+          <div class="flex items-center gap-2" id="footer-lang-selector">
+            <button onclick="setLanguage('en')" class="footer-lang-btn px-2.5 py-1.5 rounded text-lg transition-all duration-200" id="foot-lang-en" title="English">🇺🇸</button>
+            <button onclick="setLanguage('es')" class="footer-lang-btn px-2.5 py-1.5 rounded text-lg transition-all duration-200" id="foot-lang-es" title="Español">🇪🇸</button>
+            <button onclick="setLanguage('pt')" class="footer-lang-btn px-2.5 py-1.5 rounded text-lg transition-all duration-200" id="foot-lang-pt" title="Português">🇧🇷</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Column -->
+      <div>
+        <span class="font-sans text-xs font-bold text-on-surface uppercase tracking-[0.15em] mb-4 block" data-i18n="nav_services">Services</span>
+        <nav aria-label="Services navigation">
+          <ul class="flex flex-col gap-3">
+            <li><a href="#services" class="font-sans text-sm text-on-surface-variant hover:text-primary-container transition-colors duration-200" data-i18n="service_1_title">Deep Cleaning</a></li>
+            <li><a href="#services" class="font-sans text-sm text-on-surface-variant hover:text-primary-container transition-colors duration-200" data-i18n="service_2_title">Move-In / Move-Out</a></li>
+            <li><a href="#services" class="font-sans text-sm text-on-surface-variant hover:text-primary-container transition-colors duration-200" data-i18n="service_3_title">Post-Construction</a></li>
+            <li><a href="#services" class="font-sans text-sm text-on-surface-variant hover:text-primary-container transition-colors duration-200" data-i18n="nav_services">Recurring Cleaning</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Contact Column -->
+      <div>
+        <span class="font-sans text-xs font-bold text-on-surface uppercase tracking-[0.15em] mb-4 block" data-i18n="footer_quick">Quick Contact</span>
+        <div class="flex flex-col gap-4">
+          <a
+            href="#"
+            data-whatsapp
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 font-sans text-sm text-on-surface-variant hover:text-primary-container transition-colors duration-200 min-h-[44px]"
+            id="footer-wa-link"
+          >
+            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">chat</span>
+            WhatsApp
+          </a>
+          <a
+            href="sms:+18135457674"
+            class="flex items-center gap-2 font-sans text-sm text-on-surface-variant hover:text-primary-container transition-colors duration-200 min-h-[44px]"
+            id="footer-sms-link"
+          >
+            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">sms</span>
+            SMS: (813) 545-7674
+          </a>
+          <a
+            href="#areas"
+            class="flex items-center gap-2 font-sans text-sm text-on-surface-variant hover:text-primary-container transition-colors duration-200 min-h-[44px]"
+          >
+            <span class="material-symbols-outlined text-[18px]" aria-hidden="true">location_on</span>
+            Tampa Bay Area, FL
+          </a>
+        </div>
+
+        <div class="mt-6 pt-5 border-t border-outline-variant/40">
+          <span class="font-sans text-xs font-bold text-on-surface uppercase tracking-[0.15em] mb-3 block" data-i18n="footer_company">Company</span>
+          <ul class="flex flex-col gap-3">
+            <li><a href="#about-me" class="font-sans text-sm text-on-surface-variant hover:text-primary-container transition-colors duration-200" data-i18n="about_tassia">About MS Cleaning</a></li>
+            <li><a href="#" class="font-sans text-sm text-on-surface-variant hover:text-primary-container transition-colors duration-200">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  </div>
+
+  <!-- ══ CONTACT CHOICE MODAL ══ -->
+  <div
+    id="contact-modal"
+    class="fixed inset-0 z-[110] flex items-center justify-center p-4 bg-black/60 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-title"
+  >
+    <!-- Backdrop Close Trigger -->
+    <div class="absolute inset-0" onclick="closeContactModal()"></div>
+
+    <!-- Modal Container -->
+    <div
+      class="relative w-full max-w-md bg-white/95 backdrop-blur-xl rounded-3xl p-6 md:p-8 shadow-[0_25px_60px_-15px_rgba(108,0,81,0.25)] border border-primary-container/10 scale-95 opacity-0 transition-all duration-300"
+      id="modal-container"
+    >
+      <!-- Close Button -->
+      <button
+        onclick="closeContactModal()"
+        class="absolute top-5 right-5 w-10 h-10 flex items-center justify-center rounded-full bg-surface-dim hover:bg-secondary-container/50 text-on-surface-variant hover:text-primary transition-all duration-200"
+        aria-label="Close modal"
+      >
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+
+      <!-- Icon & Header -->
+      <div class="flex flex-col items-center text-center mt-2 mb-6">
+        <div class="w-16 h-16 rounded-2xl bg-secondary-container flex items-center justify-center text-primary-container mb-4 shadow-sm animate-pulse-subtle">
+          <span class="material-symbols-outlined text-[32px]">cleaning_services</span>
+        </div>
+        <h3 id="modal-title" class="font-serif text-2xl md:text-3xl font-bold text-on-surface mb-1">
+          <!-- Dynamic text through JS -->
+        </h3>
+        <p class="font-sans text-xs font-bold text-primary-container uppercase tracking-[0.12em] mb-3" data-i18n="modal_subtitle">
+          Connect Directly with Tássia
+        </p>
+        <p id="modal-description" class="font-sans text-sm text-on-surface-variant leading-relaxed max-w-xs" data-i18n="modal_desc">
+          Choose your preferred channel below. Tássia (owner and founder) will respond immediately to tailor your service.
+        </p>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col gap-3">
+        <!-- WhatsApp Option -->
+        <a
+          id="modal-wa-btn"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center justify-center gap-3 w-full py-4 rounded-2xl bg-[#25D366] hover:bg-[#128C7E] text-white font-sans text-base font-bold shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
+        >
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.665.989 3.3 1.489 5.362 1.49 5.508 0 9.99-4.482 9.993-9.988.001-2.668-1.037-5.176-2.925-7.066C17.14 1.7 14.636.662 11.97.662c-5.512 0-9.998 4.487-10 9.994-.001 2.01.523 3.666 1.517 5.297L2.5 21.5l6.147-1.614zM17.5 14.9c-.3-.15-1.75-.85-2.05-.95-.3-.1-.5-.15-.7.15-.2.3-.75.95-.9.1-.15-.15-.3-.45-1.2-1.05-.7-.6-1.15-1-1.65-1.5-.4-.45-.4-.85-.2-1.15.15-.3.3-.7.45-1.05.15-.3.15-.55.05-.85-.1-.3-.7-1.7-.95-2.35-.25-.6-.5-.5-.7-.5-.2 0-.4 0-.6 0-.2 0-.6.05-.9.4-.3.35-1.15 1.15-1.15 2.8s1.2 3.25 1.35 3.45c.15.2 2.35 3.6 5.7 5.05.8.35 1.4.55 1.9.7.8.25 1.5.2 2.1.1.65-.1 1.75-.7 2-1.4.25-.7.25-1.3.15-1.4-.1-.15-.4-.25-.7-.4z"/>
+          </svg>
+          <span data-i18n="modal_wa_btn">Chat on WhatsApp</span>
+        </a>
+
+        <!-- SMS Option -->
+        <a
+          id="modal-sms-btn"
+          href="#"
+          class="flex items-center justify-center gap-3 w-full py-4 rounded-2xl bg-[#007AFF] hover:bg-[#0056b3] text-white font-sans text-base font-bold shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
+        >
+          <span class="material-symbols-outlined text-[24px]">sms</span>
+          <span data-i18n="modal_sms_btn">Send SMS Text</span>
+        </a>
+      </div>
+
+      <!-- Divider -->
+      <div class="my-5 flex items-center justify-center gap-3">
+        <span class="h-[1px] w-full bg-outline-variant/30"></span>
+        <span class="text-xs font-bold text-on-surface-variant/40 uppercase tracking-[0.2em] whitespace-nowrap" data-i18n="lang_title">Language</span>
+        <span class="h-[1px] w-full bg-outline-variant/30"></span>
+      </div>
+
+      <!-- Quick Call Footer -->
+      <div class="text-center">
+        <p class="font-sans text-xs text-on-surface-variant mb-1">
+          <span data-i18n="modal_footer">Or call directly:</span>
+          <a href="tel:+18135457674" class="text-primary-container hover:text-primary font-bold transition-colors ml-1" id="modal-phone-link">
+            (813) 545-7674
+          </a>
+        </p>
+        <span class="text-[10px] text-on-surface-variant/50 uppercase tracking-widest font-sans" data-i18n="footer_lic">Licensed & Insured</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="./script.js?v=7"></script>
+</body>
+</html>
