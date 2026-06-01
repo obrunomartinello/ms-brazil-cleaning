@@ -689,13 +689,14 @@ h1, h2, h3, h4, h5, h6 {
 /* ---- Nav Links ---- */
 .nav-link {
   font-family: 'Manrope', sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   color: var(--on-surface-variant);
   text-decoration: none;
   position: relative;
   transition: color 0.2s ease;
+  white-space: nowrap;
 }
 
 .nav-link::after {
