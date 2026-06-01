@@ -87,7 +87,7 @@
   </script>
 </head>
 
-<body class="bg-surface text-on-surface overflow-x-hidden">
+<body class="bg-surface text-on-surface overflow-x-hidden" data-force-scrolled="true">
 
   <!-- ══ NAVBAR ══ -->
   <nav id="navbar" role="navigation" aria-label="Main navigation">
@@ -99,14 +99,14 @@
       <!-- Logo (New brand logo with transparent and dark variants) -->
       <a href="#hero" class="flex-1 md:flex-none flex justify-center md:justify-start items-center group" aria-label="MS Brazil Cleaning - Home">
         <img
-          src="./assets/images/logo-white.png"
+          src="./assets/images/LOGO BRANCA.png"
           alt="MS Brazil Cleaning Logo"
           class="logo-white h-16 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
           width="64"
           height="64"
         />
         <img
-          src="./assets/images/logo-dark.png"
+          src="./assets/images/Logo transparente.png"
           alt="MS Brazil Cleaning Logo"
           class="logo-dark hidden h-16 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
           width="64"
@@ -178,39 +178,66 @@
 
   <!-- Strict Layout Boundary Wrapper to absolutely prevent horizontal overflow rubber-banding, especially on iOS Safari -->
   <div class="overflow-x-hidden w-full max-w-full relative">
-    <main class="pt-20">
-      <!-- ══ HERO SECTION ══ -->
-      <section class="bg-surface-dim py-16 md:py-24 text-center">
-        <div class="max-w-[800px] mx-auto px-5">
-          <h1 class="font-serif text-4xl md:text-5xl font-bold text-on-surface mb-4">
-            Brazilian Level Detailing in Action
-          </h1>
+    <main class="pt-24 pb-16">
+      
+      <!-- HEADER -->
+      <section class="py-12 text-center px-4">
+        <h1 class="font-serif text-4xl md:text-5xl font-bold text-on-surface mb-4" data-i18n="gallery_title">
+          Brazilian Level Detailing in Action
+        </h1>
+        <p class="font-sans text-on-surface-variant max-w-2xl mx-auto" data-i18n="gallery_subtitle">
+          See the difference our premium cleaning service makes. We leave every corner spotless and shining.
+        </p>
+      </section>
+
+      <!-- GALLERY SECTION -->
+      <section class="max-w-[1200px] mx-auto px-4 md:px-16 mb-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Video 1 -->
+          <div class="rounded-xl overflow-hidden shadow-md bg-surface-container hover:shadow-xl transition-shadow duration-300">
+            <video src="./assets/portfolio/vid1.mov" class="w-full h-auto" autoplay loop muted playsinline controls></video>
+          </div>
+          
+          <!-- Video 2 -->
+          <div class="rounded-xl overflow-hidden shadow-md bg-surface-container hover:shadow-xl transition-shadow duration-300">
+            <video src="./assets/portfolio/vid2.mov" class="w-full h-auto" autoplay loop muted playsinline controls></video>
+          </div>
+          
+          <!-- Video 3 -->
+          <div class="rounded-xl overflow-hidden shadow-md bg-surface-container hover:shadow-xl transition-shadow duration-300">
+            <video src="./assets/portfolio/vid3.mov" class="w-full h-auto" autoplay loop muted playsinline controls></video>
+          </div>
+
+          <!-- Video 4 -->
+          <div class="rounded-xl overflow-hidden shadow-md bg-surface-container hover:shadow-xl transition-shadow duration-300">
+            <video src="./assets/portfolio/vid4.mp4" class="w-full h-auto" autoplay loop muted playsinline controls></video>
+          </div>
+
+          <!-- Video 5 -->
+          <div class="rounded-xl overflow-hidden shadow-md bg-surface-container hover:shadow-xl transition-shadow duration-300">
+            <video src="./assets/portfolio/vid5.mp4" class="w-full h-auto" autoplay loop muted playsinline controls></video>
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="text-center px-4 py-8 bg-surface-dim rounded-2xl max-w-[800px] mx-auto">
+        <h2 class="font-serif text-2xl font-bold mb-4" data-i18n="gallery_cta_title">Loved what you saw?</h2>
+        <a
+          href="#"
           data-whatsapp
           target="_blank"
           rel="noopener noreferrer"
-          class="btn-whatsapp mb-5 w-full sm:w-auto"
+          class="btn-whatsapp inline-flex w-full sm:w-auto items-center justify-center gap-2"
           id="footer-cta-btn"
         >
           <span class="material-symbols-outlined text-[28px] text-green-500" aria-hidden="true">chat</span>
           <span data-i18n="cta_btn">Chat on WhatsApp</span>
         </a>
-
-        <!-- SMS Alternative -->
-        <p class="font-sans text-sm text-white/70">
-          <span data-i18n="cta_sms">Prefer a text? SMS us at</span>
-          <a
-            href="sms:+18135457674"
-            class="underline underline-offset-2 text-white/90 hover:text-white font-semibold transition-colors duration-200 ml-1"
-            id="footer-sms-btn"
-          >
-            (813) 545-7674
-          </a>
-        </p>
-
-      </div>
-    </section>
-
-  </main>
+      </section>
+    </main>
 
   <!-- ══ FOOTER ══ -->
   <footer class="bg-surface-container-low border-t border-outline-variant py-12 md:py-16">
@@ -219,7 +246,7 @@
       <!-- Brand Column (Featuring new brand logo) -->
       <div class="sm:col-span-2 md:col-span-1">
         <div class="flex flex-col gap-3 mb-5">
-          <img src="./assets/images/logo-dark.png" alt="MS Brazil Cleaning Logo" class="h-28 md:h-32 w-auto object-contain self-start" />
+          <img src="./assets/images/Logo transparente.png" alt="MS Brazil Cleaning Logo" class="h-28 md:h-32 w-auto object-contain self-start" />
           <span class="font-serif text-2xl font-bold text-primary-container">MS Brazil Cleaning</span>
         </div>
         <p class="font-sans text-sm text-on-surface-variant leading-relaxed mb-3" data-i18n="footer_copyright">

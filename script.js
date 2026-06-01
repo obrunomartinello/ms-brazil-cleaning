@@ -391,9 +391,9 @@ document.addEventListener('DOMContentLoaded', function () {
   let lastScrollY = window.scrollY;
   function updateNavbar() {
     const currentScrollY = window.scrollY;
-    
+    const isForceScrolled = document.body.hasAttribute('data-force-scrolled');
     // Background and color styling changes based on scroll threshold
-    if (currentScrollY > 60) {
+    if (currentScrollY > 60 || isForceScrolled) {
       if (navbar) navbar.classList.add('scrolled');
       if (themeColorMeta) themeColorMeta.setAttribute('content', '#ffffff');
     } else {
