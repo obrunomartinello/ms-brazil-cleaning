@@ -5,8 +5,11 @@
 /* ── Translation Database (EN, ES, PT) ── */
 const translations = {
   en: {
+    nav_home: "Home",
+    back_to_top: "Back to top",
     nav_services: "Services",
     nav_about: "About MS Cleaning",
+    nav_gallery: "Gallery / Portfolio",
     nav_areas: "Coverage Area",
     nav_reviews: "Reviews",
     nav_cta: "Get a Quote",
@@ -105,12 +108,15 @@ const translations = {
     mob_cta: "Get a Quote"
   },
   es: {
+    nav_home: "Inicio",
+    back_to_top: "Volver arriba",
     nav_services: "Servicios",
     nav_about: "Sobre MS Cleaning",
+    nav_gallery: "Galería / Portafolio",
     nav_areas: "Área de Cobertura",
     nav_reviews: "Reseñas",
-    nav_cta: "Presupuesto",
-    mob_cta: "Presupuesto por WhatsApp",
+    nav_cta: "Solicitar Cotización",
+    mob_cta: "Cotizar por WhatsApp",
     footer_lang: "Seleccionar Idioma",
     
     hero_badge: "✨ Área de Tampa Bay • Est. 2020",
@@ -205,6 +211,8 @@ const translations = {
     mob_cta: "Obtener Presupuesto"
   },
   pt: {
+    nav_home: "Início",
+    back_to_top: "Voltar ao topo",
     nav_services: "Serviços",
     nav_about: "Sobre a MS Cleaning",
     nav_areas: "Área de Cobertura",
@@ -389,6 +397,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* ── 3. Navbar Scroll Glass & Hide Effect ── */
   let lastScrollY = window.scrollY;
+  const backToTopBtn = document.getElementById('back-to-top');
+  if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
   function updateNavbar() {
     const currentScrollY = window.scrollY;
     const isForceScrolled = document.body.hasAttribute('data-force-scrolled');
@@ -412,6 +427,16 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       if (navbar) navbar.classList.remove('nav-hidden');
     }
+
+    // Back to Top button visibility
+    if (backToTopBtn) {
+      if (currentScrollY > 400) {
+        backToTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+      } else {
+        backToTopBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+      }
+    }
+
     lastScrollY = currentScrollY;
   }
   window.addEventListener('scroll', updateNavbar, { passive: true });
