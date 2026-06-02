@@ -8,11 +8,13 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   width: 100%;
-  max-width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 
 /* ---- Root Variables ---- */
@@ -812,26 +814,21 @@ footer {
 }
 
 .mobile-nav {
-  display: flex; /* Kept flex for children alignment, transitioned via max-height and opacity */
+  display: none;
   flex-direction: column;
   gap: 0;
-  background: rgba(251, 249, 250, 0.98);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  padding: 1.5rem;
   border-top: 1px solid var(--outline-variant);
-  padding: 0 1.5rem;
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1), 
-              opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
-              padding 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .mobile-nav.open {
-  max-height: 450px; /* Fully wraps links and language flag elements */
-  opacity: 1;
-  padding: 1.5rem;
+  display: flex;
+  animation: navFadeIn 0.3s ease forwards;
+}
+
+@keyframes navFadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .mobile-nav > * {
