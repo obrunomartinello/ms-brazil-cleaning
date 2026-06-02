@@ -609,7 +609,7 @@ window.openContactModal = function (service) {
   container.classList.add('scale-100', 'opacity-100');
   
   // Disable body scroll when modal is open
-  document.body.style.overflow = 'hidden';
+  document.body.style.overflowY = 'hidden';
 };
 
 window.closeContactModal = function () {
@@ -623,8 +623,8 @@ window.closeContactModal = function () {
   modal.classList.remove('opacity-100');
   modal.classList.add('pointer-events-none');
   
-  // Restore body scroll
-  document.body.style.overflow = '';
+  // Restore body scroll (use overflowY to avoid removing overflowX)
+  document.body.style.overflowY = '';
 };
 
 // Unregister Service Workers to prevent stale cache issues
