@@ -11,8 +11,8 @@
   <link rel="apple-touch-icon" href="./assets/icons/icon-192x192.png" />
 
   <!-- Progressive Resource Preloading (Staircase Load Priority) -->
-  <link rel="preload" fetchpriority="high" as="image" href="./assets/images/logo-white.png" type="image/png" />
-  <link rel="preload" fetchpriority="high" as="image" href="./assets/images/logo-dark.png" type="image/png" />
+  <link rel="preload" fetchpriority="high" as="image" href="./assets/images/logo-branca.png" type="image/png" />
+  <link rel="preload" fetchpriority="high" as="image" href="./assets/images/logo-transparente.png" type="image/png" />
   <link rel="preload" fetchpriority="high" as="image" href="./assets/images/IMG_2539.webp" type="image/webp" />
 
   <!-- SEO Meta Tags -->
@@ -35,8 +35,8 @@
   <meta name="twitter:image" content="https://msbrazilcleaning.com/assets/images/IMG_2539.webp" />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="./assets/images/logo-dark.png" />
-  <link rel="apple-touch-icon" href="./assets/images/logo-dark.png" />
+  <link rel="icon" type="image/png" href="./assets/images/logo-transparente.png" />
+  <link rel="apple-touch-icon" href="./assets/images/logo-transparente.png" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -97,21 +97,20 @@
       <div class="flex-1 md:hidden"></div>
 
       <!-- Logo (New brand logo with transparent and dark variants) -->
-      <a href="./index.html" class="flex-1 md:flex-none flex justify-center md:justify-start items-center group" aria-label="MS Brazil Cleaning - Home">
-        <img
-          src="./assets/images/LOGO BRANCA.png"
-          alt="MS Brazil Cleaning Logo"
-          class="logo-white h-16 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-          width="64"
-          height="64"
-        />
-        <img
-          src="./assets/images/Logo transparente.png"
-          alt="MS Brazil Cleaning Logo"
-          class="logo-dark hidden h-16 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-          width="64"
-          height="64"
-        />
+      <a href="./index.html" class="flex-1 md:flex-none flex justify-center md:justify-start items-center group" aria-label="Home page">
+        <picture class="relative flex items-center justify-center md:justify-start h-16 w-full max-w-[180px]">
+          <img 
+            src="./assets/images/logo-branca.png" 
+            alt="MS Brazil Cleaning Logo" 
+            class="logo-white h-16 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+            fetchpriority="high" 
+          />
+          <img 
+            src="./assets/images/logo-transparente.png" 
+            alt="MS Brazil Cleaning Logo" 
+            class="logo-dark hidden h-16 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+          />
+        </picture>
       </a>
 
       <!-- Desktop Nav Links -->
@@ -693,7 +692,7 @@
       <!-- Brand Column (Featuring new brand logo) -->
       <div class="sm:col-span-2 md:col-span-1">
         <div class="flex flex-col gap-3 mb-5">
-          <img src="./assets/images/Logo transparente.png" alt="MS Brazil Cleaning Logo" class="h-28 md:h-32 w-auto object-contain self-start" />
+          <img src="./assets/images/logo-transparente.png" alt="MS Brazil Cleaning Logo" class="h-28 md:h-32 w-auto object-contain self-start" />
           <span class="font-serif text-2xl font-bold text-primary-container">MS Brazil Cleaning</span>
         </div>
         <p class="font-sans text-sm text-on-surface-variant leading-relaxed mb-3" data-i18n="footer_copyright">
