@@ -416,18 +416,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (themeColorMeta) themeColorMeta.setAttribute('content', '#3D0A2E');
     }
 
-    // Hide-on-scroll down, show-on-scroll up (desktop and mobile)
-    const isMobileMenuOpen = mobileNav && mobileNav.classList.contains('open');
-    if (!isMobileMenuOpen && currentScrollY > 120) {
-      if (currentScrollY > lastScrollY) {
-        if (navbar) navbar.classList.add('nav-hidden');
-      } else {
-        if (navbar) navbar.classList.remove('nav-hidden');
-      }
-    } else {
-      if (navbar) navbar.classList.remove('nav-hidden');
-    }
-
+    // The navbar is now always visible (floating style), so we removed the hide-on-scroll down logic.
     // Back to Top button visibility
     if (backToTopBtn) {
       if (currentScrollY > 400) {
