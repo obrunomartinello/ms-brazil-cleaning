@@ -54,13 +54,15 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CleaningService",
+    "@type": ["LocalBusiness", "CleaningService"],
+    "@id": "https://msbrazilcleaning.com/#business",
     "name": "MS Brazil Cleaning Services",
     "description": "Premium house cleaning services in Tampa Bay, Florida. Brazilian-level detail for deep cleaning, move-in/out, and post-construction cleaning.",
     "url": "https://msbrazilcleaning.com",
     "telephone": "+1-813-545-7674",
     "priceRange": "$$",
     "image": "https://msbrazilcleaning.com/assets/images/IMG_2539.webp",
+    "logo": "https://msbrazilcleaning.com/assets/images/logo-transparente.png",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Tampa",
@@ -72,16 +74,45 @@
       "latitude": 28.0506327,
       "longitude": -82.72397295
     },
-    "areaServed": ["Tampa", "Lutz", "Odessa", "Wesley Chapel", "St. Petersburg", "Clearwater", "Brandon", "Riverview", "Seminole", "Spring Hill", "Land O Lakes", "Temple Terrace"],
-    "openingHours": "Mo-Sa 08:00-18:00",
+    "areaServed": [
+      {"@type": "City", "name": "Tampa"},
+      {"@type": "City", "name": "Lutz"},
+      {"@type": "City", "name": "Odessa"},
+      {"@type": "City", "name": "Wesley Chapel"},
+      {"@type": "City", "name": "St. Petersburg"},
+      {"@type": "City", "name": "Clearwater"},
+      {"@type": "City", "name": "Brandon"},
+      {"@type": "City", "name": "Riverview"},
+      {"@type": "City", "name": "Seminole"},
+      {"@type": "City", "name": "Spring Hill"},
+      {"@type": "City", "name": "Land O Lakes"},
+      {"@type": "City", "name": "Temple Terrace"}
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ],
     "sameAs": [
       "https://www.facebook.com/msbrazilcleaning",
       "https://www.instagram.com/msbrazilcleaning"
     ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "200"
+    "founder": {
+      "@type": "Person",
+      "name": "Tassia"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Cleaning Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Standard House Cleaning"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Deep Cleaning"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Move-In / Move-Out Cleaning"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Post-Construction Cleaning"}}
+      ]
     }
   }
   </script>
@@ -347,7 +378,16 @@
           </ul>
         </div>
       </div>
+      </div>
 
+      <!-- Areas We Serve Link Juice -->
+      <div class="col-span-1 sm:col-span-2 md:col-span-3 mt-8 pt-8 border-t border-outline-variant/40 w-full text-left text-xs text-on-surface-variant flex flex-wrap gap-x-2 gap-y-1">
+        <span class="font-bold">Areas We Serve:</span>
+        <span id="seo-city-links" class="opacity-80 flex flex-wrap gap-x-2">
+          <!-- Links will be generated here -->
+          <span>Pending service areas...</span>
+        </span>
+      </div>
     </div>
   </footer>
   </div>
